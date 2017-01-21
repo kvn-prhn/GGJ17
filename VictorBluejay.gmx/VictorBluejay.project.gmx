@@ -6,7 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\victor_walking</sprite>
+    <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
     <sprite>sprites\towerSprite1</sprite>
     <sprite>sprites\towerSprite2</sprite>
@@ -26,13 +26,19 @@
     <sprite>sprites\bullet2</sprite>
     <sprite>sprites\bullet3</sprite>
     <sprite>sprites\bullet4</sprite>
+    <sprite>sprites\squirrel_run_towards</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
+    <background>background\parking_lot_bg</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\room1_mob_path</path>
+    <path>paths\main_menu_path</path>
   </paths>
+  <fonts name="fonts">
+    <font>fonts\font1</font>
+  </fonts>
   <objects name="objects">
     <object>objects\bullletobj</object>
     <object>objects\controller_1</object>
@@ -56,6 +62,7 @@
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>
+    <timeline>timelines\squirrel_spawner_main_menu</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\main_menu_room</room>

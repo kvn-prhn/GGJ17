@@ -225,13 +225,8 @@ image_speed = 0.4;
             <string>{
 
 // increase the squirrel survival count
-<<<<<<< HEAD
 //squirrel_survival_count = squirrel_survival_count + 1;
 score = score + 1;
-=======
-global.squirrel_survival_count = global.squirrel_survival_count + 1;
-
->>>>>>> b15e993f35461926a19228607e862eb05db7af82
 }
 </string>
           </argument>

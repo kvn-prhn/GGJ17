@@ -25,9 +25,11 @@
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
+    <background>background\parking_lot_bg</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\room1_mob_path</path>
+    <path>paths\main_menu_path</path>
   </paths>
   <objects name="objects">
     <object>objects\bullletobj</object>
@@ -44,6 +46,7 @@
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>
+    <timeline>timelines\squirrel_spawner_main_menu</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\main_menu_room</room>

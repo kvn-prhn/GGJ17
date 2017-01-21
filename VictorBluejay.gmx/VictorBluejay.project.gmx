@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-
     <sprite>sprites\victorplaceholder</sprite>
     <sprite>sprites\squirrel_Sprite</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
@@ -24,7 +23,6 @@
     <object>objects\controller_1</object>
     <object>objects\victor</object>
     <object>objects\bullletobj</object>
-
   </objects>
   <rooms name="rooms">
     <room>rooms\startRoom</room>

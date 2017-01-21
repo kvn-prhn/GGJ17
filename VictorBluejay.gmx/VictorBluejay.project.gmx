@@ -8,20 +8,24 @@
   <sprites name="sprites">
     <sprite>sprites\victor_walking</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
-    <sprite>sprites\bullet</sprite>
     <sprite>sprites\towerSprite1</sprite>
     <sprite>sprites\towerSprite2</sprite>
     <sprite>sprites\trail</sprite>
-    <sprite>sprites\squirrel_run_left</sprite>
-    <sprite>sprites\victor_idle</sprite>
     <sprite>sprites\squirrel_run_right</sprite>
+    <sprite>sprites\squirrel_run_left</sprite>
+    <sprite>sprites\squirrel_run_away</sprite>
+    <sprite>sprites\victor_idle</sprite>
     <sprite>sprites\headquarters</sprite>
     <sprite>sprites\towerSprite3</sprite>
-    <sprite>sprites\squirrel_run_away</sprite>
     <sprite>sprites\mirrorSprite</sprite>
     <sprite>sprites\gunSprite</sprite>
     <sprite>sprites\bushSprite</sprite>
     <sprite>sprites\main_menu_spacebar</sprite>
+    <sprite>sprites\towerSprite4</sprite>
+    <sprite>sprites\bullet1</sprite>
+    <sprite>sprites\bullet2</sprite>
+    <sprite>sprites\bullet3</sprite>
+    <sprite>sprites\bullet4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
@@ -38,11 +42,19 @@
     <object>objects\normal_squirrel</object>
     <object>objects\test_anim</object>
     <object>objects\trail_detail</object>
-    <object>objects\turret_1</object>
-    <object>objects\turret_1_bullet</object>
     <object>objects\victor</object>
     <object>objects\main_menu_controller1</object>
     <object>objects\bush</object>
+    <object>objects\turret_1</object>
+    <object>objects\turret_1_bullet</object>
+    <object>objects\turret_2</object>
+    <object>objects\turret_2_bullet</object>
+    <object>objects\turret_3</object>
+    <object>objects\turret_3_bullet</object>
+    <object>objects\turret_4</object>
+    <object>objects\turret_4_bullet</object>
+    <object>objects\gun_dropped</object>
+    <object>objects\mirror_dropped</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>

@@ -19,8 +19,9 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\map0_mob_path</path>
+    <path>paths\path_1</path>
+    <path>paths\path1</path>
   </paths>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\bulletobj</object>
     <object>objects\bullletobj</object>
@@ -34,9 +35,8 @@
     <object>objects\victor</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\gameRoom1</room>
-    <room>rooms\room3</room>
     <room>rooms\startRoom</room>
+    <room>rooms\gameRoom1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

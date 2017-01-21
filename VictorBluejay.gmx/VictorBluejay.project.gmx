@@ -7,10 +7,10 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\victorplaceholder</sprite>
-	<sprite>sprites\squirrel_Sprite</sprite>
+    <sprite>sprites\squirrel_Sprite</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
+    <sprite>sprites\bullet</sprite>
   </sprites>
-
   <backgrounds name="background">
     <background>background\map0_bg</background>
   </backgrounds>
@@ -21,7 +21,8 @@
     <object>objects\squirrel</object>
     <object>objects\end_objective</object>
     <object>objects\controller_1</object>
-	<object>objects\victor</object>
+    <object>objects\victor</object>
+    <object>objects\bullletobj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\startRoom</room>

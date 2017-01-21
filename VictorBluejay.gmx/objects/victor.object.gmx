@@ -120,7 +120,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>current_item</string>
+            <string>global.current_item</string>
           </argument>
           <argument>
             <kind>0</kind>

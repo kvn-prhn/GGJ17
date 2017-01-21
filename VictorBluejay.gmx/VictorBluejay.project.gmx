@@ -16,6 +16,8 @@
     <sprite>sprites\squirrel_run_left</sprite>
     <sprite>sprites\victor_idle</sprite>
     <sprite>sprites\squirrel_run_right</sprite>
+    <sprite>sprites\headquarters</sprite>
+    <sprite>sprites\towerSprite3</sprite>
     <sprite>sprites\squirrel_run_away</sprite>
   </sprites>
   <backgrounds name="background">
@@ -23,19 +25,19 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\map0_mob_path</path>
-    <path>paths\path_1</path>
-    <path>paths\path1</path>
   </paths>
   <objects name="objects">
     <object>objects\bulletobj</object>
+    <object>objects\bullletobj</object>
     <object>objects\controller_1</object>
     <object>objects\end_objective</object>
-    <object>objects\trail_detail</object>
     <object>objects\squirrel</object>
+    <object>objects\squirrelObj</object>
+    <object>objects\test_anim</object>
+    <object>objects\trail_detail</object>
     <object>objects\turret_1</object>
     <object>objects\turret_1_bullet</object>
     <object>objects\victor</object>
-    <object>objects\test_anim</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>
@@ -43,6 +45,7 @@
   <rooms name="rooms">
     <room>rooms\startRoom</room>
     <room>rooms\gameRoom1</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

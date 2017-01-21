@@ -5,6 +5,9 @@
   <backroom>0</backroom>
   <hsnap>16</hsnap>
   <vsnap>16</vsnap>
+<<<<<<< HEAD
+  <points/>
+=======
   <points>
     <point>112,480,100</point>
     <point>112,368,100</point>
@@ -17,4 +20,5 @@
     <point>560,304,100</point>
     <point>560,0,100</point>
   </points>
+>>>>>>> 46614d3947b1112f6aa5eac59eaafd03898d337a
 </path>

@@ -61,7 +61,7 @@ vspeed = diffY * bullet_speed_hi;
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>victor_walking</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>

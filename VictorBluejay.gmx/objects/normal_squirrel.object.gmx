@@ -428,7 +428,7 @@ draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed));
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="turret_1_bullet">
+    <event eventtype="4" ename="bullletobj">
       <action>
         <libid>1</libid>
         <id>203</id>

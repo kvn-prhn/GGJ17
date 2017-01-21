@@ -45,7 +45,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>squirrel</object>
+            <object>squirrelObj</object>
           </argument>
           <argument>
             <kind>0</kind>

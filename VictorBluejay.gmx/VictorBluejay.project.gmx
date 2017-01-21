@@ -6,25 +6,31 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-
     <sprite>sprites\victorplaceholder</sprite>
     <sprite>sprites\squirrel_Sprite</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
     <sprite>sprites\bullet</sprite>
+    <sprite>sprites\towerSprite1</sprite>
+    <sprite>sprites\towerSprite2</sprite>
+    <sprite>sprites\trail</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\map0_bg</background>
   </backgrounds>
   <paths name="paths">
-    <path>paths\path_1</path>
+    <path>paths\map0_mob_path</path>
+    <path>paths\path1</path>
   </paths>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\squirrel</object>
     <object>objects\end_objective</object>
     <object>objects\controller_1</object>
     <object>objects\victor</object>
     <object>objects\bullletobj</object>
-
+    <object>objects\towerObj1</object>
+    <object>objects\towerObj2</object>
+    <object>objects\trail_detail</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\startRoom</room>

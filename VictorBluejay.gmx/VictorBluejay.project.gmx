@@ -40,6 +40,7 @@
     <object>objects\turret_1_bullet</object>
     <object>objects\victor</object>
     <object>objects\main_menu_controller1</object>
+    <object>objects\bush</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>

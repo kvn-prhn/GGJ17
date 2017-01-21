@@ -51,6 +51,8 @@
     <object>objects\turret_3_bullet</object>
     <object>objects\turret_4</object>
     <object>objects\turret_4_bullet</object>
+    <object>objects\gun_dropped</object>
+    <object>objects\mirror_dropped</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>

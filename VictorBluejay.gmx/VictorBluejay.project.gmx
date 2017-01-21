@@ -16,6 +16,7 @@
     <sprite>sprites\squirrel_run_left</sprite>
     <sprite>sprites\victor_idle</sprite>
     <sprite>sprites\squirrel_run_right</sprite>
+    <sprite>sprites\squirrel_run_away</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>

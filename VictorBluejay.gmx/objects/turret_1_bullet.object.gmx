@@ -29,8 +29,11 @@
 move_towards_point(spawnTower.target.x, spawnTower.target.y,15)
 
 turret_bullet_speed_hi = 15;
-image_angle = point_direction(x, y, spawnTower.target.x, spawnTower.target.y);
-// calculate direction vector towards mouse 
+squirrel_speed_x = spawnTower.target.hspeed * 4;
+squirrel_speed_y = spawnTower.target.vspeed * 4;
+//image_angle = point_direction(x, y, spawnTower.target.x, spawnTower.target.y);
+image_angle = point_direction(x, y, spawnTower.target.x + squirrel_speed_x, spawnTower.target.y + squirrel_speed_y);
+// calculate direction vector towards target
 turret_diffX = spawnTower.target.x - x;
 turret_diffY = spawnTower.target.y - y;
 // normalize direction vector

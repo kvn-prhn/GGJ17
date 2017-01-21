@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>{
 image_speed = 0.4;
+
+// the item that victor is "holding:
+current_item = "nothing";
 }
 </string>
           </argument>
@@ -131,6 +134,37 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>{
+
+// victor interact with thing nearby
+
+if (current_item == "nothing") {
+    // tries to interact with something nearby
+} // else if (current_item == something) 
+
+}
+</string>
           </argument>
         </arguments>
       </action>

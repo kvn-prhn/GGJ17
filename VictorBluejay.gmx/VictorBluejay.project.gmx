@@ -18,6 +18,7 @@
     <sprite>sprites\squirrel_run_right</sprite>
     <sprite>sprites\headquarters</sprite>
     <sprite>sprites\towerSprite3</sprite>
+    <sprite>sprites\squirrel_run_away</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>

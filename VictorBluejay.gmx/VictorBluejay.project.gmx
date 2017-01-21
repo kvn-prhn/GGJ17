@@ -6,13 +6,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\victorplaceholder</sprite>
+    <sprite>sprites\victor_walking</sprite>
     <sprite>sprites\squirrel_Sprite</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
     <sprite>sprites\bullet</sprite>
     <sprite>sprites\towerSprite1</sprite>
     <sprite>sprites\towerSprite2</sprite>
     <sprite>sprites\trail</sprite>
+    <sprite>sprites\squirrel_run_left</sprite>
+    <sprite>sprites\victor_idle</sprite>
+    <sprite>sprites\squirrel_run_right</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
@@ -31,7 +34,11 @@
     <object>objects\turret_1</object>
     <object>objects\turret_1_bullet</object>
     <object>objects\victor</object>
+    <object>objects\test_anim</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\squirrel_spawner</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\startRoom</room>
     <room>rooms\gameRoom1</room>

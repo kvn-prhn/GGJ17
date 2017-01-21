@@ -359,8 +359,10 @@ if (current_item == "nothing") {
      
         if (dist_away &lt; 40) {
             // call the "ruffle" bush event
-            nearest_bush.ruffle = 1;
-            nearest_bush.ruffle_remaining = 5;
+            if (nearest_bush.ruffle == 0) {
+                nearest_bush.ruffle = 1;
+                nearest_bush.ruffle_remaining = 5;
+            }
             
             // see if there is an item inside of it.
             if (nearest_bush.contents != "nothing") {

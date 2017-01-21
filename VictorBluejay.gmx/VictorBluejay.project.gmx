@@ -6,7 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\victor_walking</sprite>
+    <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
     <sprite>sprites\towerSprite1</sprite>
     <sprite>sprites\towerSprite2</sprite>

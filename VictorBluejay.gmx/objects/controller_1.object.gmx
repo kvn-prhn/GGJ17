@@ -434,7 +434,7 @@ draw_set_font(font1);
 draw_set_alpha(.75);
 draw_set_color(c_orange);
 draw_rectangle(room_width - 310, room_height, room_width, room_height - 110, 0);
-draw_set_alpha(.5);
+draw_set_alpha(.25);
 draw_set_color(c_aqua);
 draw_rectangle(room_width - 300, room_height, room_width -10, room_height - 100, 0);
 draw_set_alpha(1);
@@ -442,6 +442,11 @@ draw_set_color(c_black);
 draw_text(room_width - 290, room_height - 95, "Squirrels saved:        " + string(score));
 draw_text(room_width -290, room_height - 40, "Item found:     ");
 
+if(global.current_item == "mirror")
+    draw_sprite(mirrorSprite, 0, room_width - 80, room_height - 40);
+    
+if(global.current_item == "gun")
+    draw_sprite(gunSprite, 0, room_width - 80, room_height - 40);
 }
 </string>
           </argument>

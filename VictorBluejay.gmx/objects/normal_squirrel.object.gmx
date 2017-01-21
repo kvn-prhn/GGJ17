@@ -99,8 +99,11 @@ path_start( global.current_path, /*4*/ 10, path_action_stop, true);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//"Squirrel hspeed:, " +squirrel.hspeed"
+            <string>{
+depth = -y;
+//"Squirrel hspeed:, " +squirrel.hspeed"
 draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed)); 
+}
 </string>
           </argument>
         </arguments>

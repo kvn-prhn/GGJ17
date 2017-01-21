@@ -5,9 +5,19 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\squirrel_Sprite</sprite>
+    <sprite>sprites\end_objective_sprite</sprite>
+  </sprites>
   <backgrounds name="background"/>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_1</path>
+  </paths>
+  <objects name="objects">
+    <object>objects\squirrel</object>
+    <object>objects\end_objective</object>
+    <object>objects\controller_1</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\startRoom</room>
     <room>rooms\gameRoom1</room>

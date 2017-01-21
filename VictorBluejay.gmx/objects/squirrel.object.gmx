@@ -41,7 +41,6 @@
           </argument>
         </arguments>
       </action>
-<<<<<<< HEAD
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -180,8 +179,7 @@
       </action>
     </event>
     <event eventtype="4" ename="end_objective">
-=======
->>>>>>> b15e993f35461926a19228607e862eb05db7af82
+
       <action>
         <libid>1</libid>
         <id>603</id>

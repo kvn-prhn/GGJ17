@@ -19,6 +19,9 @@
     <sprite>sprites\headquarters</sprite>
     <sprite>sprites\towerSprite3</sprite>
     <sprite>sprites\squirrel_run_away</sprite>
+    <sprite>sprites\mirrorSprite</sprite>
+    <sprite>sprites\gunSprite</sprite>
+    <sprite>sprites\bushSprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>

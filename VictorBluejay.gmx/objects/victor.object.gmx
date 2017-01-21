@@ -55,18 +55,18 @@ image_speed = 0.4;
 global.victor_speed = 3;
 
 if (keyboard_check(vk_up)) {
-    vspeed = -victor_speed;
+    vspeed = -global.victor_speed;
 } else if (keyboard_check(vk_down)) {
-    vspeed = victor_speed;
+    vspeed = global.victor_speed;
 } else {
     vspeed = 0;
 }
 
 
 if (keyboard_check(vk_left)) {
-    hspeed = -victor_speed;
+    hspeed = -global.victor_speed;
 } else if (keyboard_check(vk_right)) {
-    hspeed = victor_speed;
+    hspeed = global.victor_speed;
 } else {
     hspeed = 0;
 }

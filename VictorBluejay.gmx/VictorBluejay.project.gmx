@@ -42,6 +42,8 @@
     <object>objects\victor</object>
     <object>objects\main_menu_controller1</object>
     <object>objects\bush</object>
+    <object>objects\gun_dropped</object>
+    <object>objects\mirror_dropped</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>

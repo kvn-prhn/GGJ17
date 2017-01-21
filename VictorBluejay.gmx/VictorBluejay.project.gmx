@@ -21,10 +21,10 @@
     <object>objects\squirrel</object>
     <object>objects\end_objective</object>
     <object>objects\controller_1</object>
-
     <object>objects\victor</object>
-
     <object>objects\bullletobj</object>
+    <object>objects\turret_1</object>
+    <object>objects\turret_1_bullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\gameRoom1</room>

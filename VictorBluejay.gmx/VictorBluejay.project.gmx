@@ -6,32 +6,45 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\victorplaceholder</sprite>
+    <sprite>sprites\victor_walking</sprite>
     <sprite>sprites\squirrel_Sprite</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
     <sprite>sprites\bullet</sprite>
     <sprite>sprites\towerSprite1</sprite>
     <sprite>sprites\towerSprite2</sprite>
+    <sprite>sprites\trail</sprite>
+    <sprite>sprites\squirrel_run_left</sprite>
+    <sprite>sprites\victor_idle</sprite>
+    <sprite>sprites\squirrel_run_right</sprite>
+    <sprite>sprites\headquarters</sprite>
+    <sprite>sprites\towerSprite3</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\map0_bg</background>
+    <background>background\grass_bg</background>
   </backgrounds>
   <paths name="paths">
-    <path>paths\path_1</path>
+    <path>paths\map0_mob_path</path>
   </paths>
   <objects name="objects">
-    <object>objects\squirrelObj</object>
-    <object>objects\end_objective</object>
+    <object>objects\bulletobj</object>
+    <object>objects\bullletobj</object>
     <object>objects\controller_1</object>
-    <object>objects\victorObj</object>
-    <object>objects\bulletObj1</object>
-    <object>objects\bulletObj2</object>
-    <object>objects\towerObj1</object>
-    <object>objects\towerObj2</object>
+    <object>objects\end_objective</object>
+    <object>objects\squirrel</object>
+    <object>objects\squirrelObj</object>
+    <object>objects\test_anim</object>
+    <object>objects\trail_detail</object>
+    <object>objects\turret_1</object>
+    <object>objects\turret_1_bullet</object>
+    <object>objects\victor</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\squirrel_spawner</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\startRoom</room>
     <room>rooms\gameRoom1</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

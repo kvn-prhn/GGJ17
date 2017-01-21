@@ -83,7 +83,7 @@
           </argument>
           <argument>
             <kind>1</kind>
-            <string>Score: </string>
+            <string>Safetly Passed: </string>
           </argument>
         </arguments>
       </action>

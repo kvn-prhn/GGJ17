@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\squirrel_Sprite</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
+    <sprite>sprites\bullet</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -17,10 +18,11 @@
     <object>objects\squirrel</object>
     <object>objects\end_objective</object>
     <object>objects\controller_1</object>
+    <object>objects\bullletobj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\startRoom</room>
     <room>rooms\gameRoom1</room>
+    <room>rooms\startRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

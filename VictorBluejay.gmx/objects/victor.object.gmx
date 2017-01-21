@@ -84,7 +84,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="squirrel">
+    <event eventtype="4" ename="normal_squirrel">
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -117,7 +117,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>bulletobj</object>
+            <object>bullletobj</object>
           </argument>
           <argument>
             <kind>0</kind>

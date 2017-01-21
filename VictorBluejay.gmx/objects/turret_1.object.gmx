@@ -76,9 +76,9 @@
           <argument>
             <kind>1</kind>
             <string>coolDown = coolDown -1;
-target = instance_nearest(x, y, squirrel)
+target = instance_nearest(x, y, normal_squirrel);
 
-if(distance_to_object(squirrel) &lt; radius){
+if(distance_to_object(normal_squirrel) &lt; radius){
     if (coolDown &lt;= 0){
         instance_create(x,y,turret_1_bullet);
         coolDown = 25;    

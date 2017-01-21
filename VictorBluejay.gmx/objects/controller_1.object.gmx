@@ -101,7 +101,7 @@ global.squirrel_survival_count = 0;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>900</string>
+            <string>800</string>
           </argument>
           <argument>
             <kind>0</kind>

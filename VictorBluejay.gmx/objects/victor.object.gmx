@@ -110,7 +110,7 @@ if (keyboard_check(vk_left)) {
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>bullletobj</object>
+            <object>bulletobj</object>
           </argument>
           <argument>
             <kind>0</kind>

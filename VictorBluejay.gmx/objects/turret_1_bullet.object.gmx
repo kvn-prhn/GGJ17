@@ -26,7 +26,26 @@
           <argument>
             <kind>1</kind>
             <string>spawnTower = instance_nearest(x,y,turret_1);
-move_towards_point(spawnTower.target.x, spawnTower.terget.y,15)
+move_towards_point(spawnTower.target.x, spawnTower.target.y,15)
+
+turret_bullet_speed_hi = 15;
+image_angle = point_direction(x, y, spawnTower.target.x, spawnTower.target.y);
+// calculate direction vector towards mouse 
+turret_diffX = spawnTower.target.x - x;
+turret_diffY = spawnTower.target.y - y;
+// normalize direction vector
+turret_magn = sqrt((turret_diffX * turret_diffX) + (turret_diffY * turret_diffY));
+turret_diffX = turret_diffX / turret_magn;
+turret_diffY = turret_diffY / turret_magn;
+// set speed
+hspeed = turret_diffX * turret_bullet_speed_hi;
+vspeed = turret_diffY * turret_bullet_speed_hi;
+
+//hspeed = bullet_speed_hi*cos(image_angle);
+//vspeed = bullet_speed_hi*sin(image_angle);
+//show_message(image_angle);
+
+
 </string>
           </argument>
         </arguments>

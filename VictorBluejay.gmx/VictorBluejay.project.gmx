@@ -24,14 +24,10 @@
   </paths>
   <objects name="objects">
     <object>objects\bulletobj</object>
-    <object>objects\bullletobj</object>
     <object>objects\controller_1</object>
     <object>objects\end_objective</object>
-    <object>objects\object0</object>
-    <object>objects\squirrel</object>
-    <object>objects\towerObj1</object>
-    <object>objects\towerObj2</object>
     <object>objects\trail_detail</object>
+    <object>objects\squirrel</object>
     <object>objects\turret_1</object>
     <object>objects\turret_1_bullet</object>
     <object>objects\victor</object>

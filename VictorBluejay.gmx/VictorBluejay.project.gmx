@@ -26,6 +26,7 @@
     <sprite>sprites\bullet2</sprite>
     <sprite>sprites\bullet3</sprite>
     <sprite>sprites\bullet4</sprite>
+    <sprite>sprites\squirrel_run_towards</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>

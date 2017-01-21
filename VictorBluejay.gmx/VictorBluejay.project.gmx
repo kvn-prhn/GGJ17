@@ -5,9 +5,16 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\towerSprite1</sprite>
+    <sprite>sprites\towerSprite2</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\towerObj1</object>
+    <object>objects\towerObj2</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\startRoom</room>
     <room>rooms\gameRoom1</room>

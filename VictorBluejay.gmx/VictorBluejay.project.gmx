@@ -46,10 +46,12 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
+    <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
     <object>objects\object0</object>
     <object>objects\test_anim</object>
+
     <object>objects\main_menu_controller1</object>
     <object>objects\controller_1</object>
     <object>objects\controller_2</object>
@@ -59,7 +61,12 @@
     <object>objects\gun_dropped</object>
     <object>objects\mirror_dropped</object>
     <object>objects\bush</object>
+
     <object>objects\trail_detail</object>
+    <object>objects\victor</object>
+    <object>objects\bush</object>
+    <object>objects\main_menu_controller1</object>
+
     <object>objects\turret_1</object>
     <object>objects\turret_1_bullet</object>
     <object>objects\turret_2</object>

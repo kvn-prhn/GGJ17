@@ -646,7 +646,9 @@ score = score + 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x, y-20, "Direction: " + string(direction));
+            <string>//draw_sprite(self,-1,x,y);
+
+draw_text(x, y-20, "Direction: " + string(direction));
 </string>
           </argument>
         </arguments>

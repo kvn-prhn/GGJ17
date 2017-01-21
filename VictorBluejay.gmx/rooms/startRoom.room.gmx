@@ -70,6 +70,7 @@ global.steps = 0;
     <instance objName="towerObj1" x="504" y="469" name="inst_317766D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="towerObj2" x="791" y="339" name="inst_267D8C93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="towerObj2" x="328" y="393" name="inst_7647DC31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="test_anim" x="280" y="122" name="inst_620B63A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

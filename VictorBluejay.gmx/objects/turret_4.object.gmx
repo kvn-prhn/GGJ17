@@ -76,6 +76,7 @@
           <argument>
             <kind>1</kind>
             <string>{
+depth = -y;
 coolDown = coolDown -1;
 target = instance_nearest(x, y, normal_squirrel);
 

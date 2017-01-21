@@ -6,7 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\victor_walking</sprite>
+    <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
     <sprite>sprites\towerSprite1</sprite>
     <sprite>sprites\towerSprite2</sprite>
@@ -26,6 +26,7 @@
     <sprite>sprites\bullet2</sprite>
     <sprite>sprites\bullet3</sprite>
     <sprite>sprites\bullet4</sprite>
+    <sprite>sprites\squirrel_run_towards</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
@@ -43,6 +44,9 @@
   <scripts name="scripts">
     <script>scripts\goto_the_next_room.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font1</font>
+  </fonts>
   <objects name="objects">
     <object>objects\object0</object>
     <object>objects\test_anim</object>

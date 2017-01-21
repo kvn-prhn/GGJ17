@@ -3,7 +3,7 @@
   <spriteName>bullet1</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -28,15 +28,31 @@
             <string>{
 spawnTower = instance_nearest(x,y,turret_1);
 move_towards_point(spawnTower.target.x, spawnTower.target.y,15)
+//squirrel_bonus_x = 0; //100;
+//squirrel_bonus_y = 0; //100;
+
+look_ahead_amount = 30;
 
 turret_bullet_speed_hi = 15;
-squirrel_speed_x = spawnTower.target.hspeed * 4;
-squirrel_speed_y = spawnTower.target.vspeed * 4;
-//image_angle = point_direction(x, y, spawnTower.target.x, spawnTower.target.y);
-image_angle = point_direction(x, y, spawnTower.target.x + squirrel_speed_x, spawnTower.target.y + squirrel_speed_y);
+if (spawnTower.target.direction == 0){
+    squirrel_bonus_x = look_ahead_amount;
+}
+if (spawnTower.target.direction == 90){
+    squirrel_bonus_y = -look_ahead_amount;
+}
+if (spawnTower.target.direction == 180){
+    squirrel_bonus_x = -look_ahead_amount;
+}
+if (spawnTower.target.direction == 270){
+    squirrel_bonus_y = look_ahead_amount;
+}
+
+
+image_angle = point_direction(x, y, spawnTower.target.x, spawnTower.target.y);
+//image_angle = point_direction(x, y, spawnTower.target.x + squirrel_bonus_x, spawnTower.target.y + squirrel_bonus_y);
 // calculate direction vector towards target
-turret_diffX = spawnTower.target.x - x;
-turret_diffY = spawnTower.target.y - y;
+turret_diffX = (spawnTower.target.x + squirrel_bonus_x) - x;
+turret_diffY = (spawnTower.target.y + squirrel_bonus_y) - y;
 // normalize direction vector
 turret_magn = sqrt((turret_diffX * turret_diffX) + (turret_diffY * turret_diffY));
 turret_diffX = turret_diffX / turret_magn;

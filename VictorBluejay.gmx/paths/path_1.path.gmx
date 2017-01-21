@@ -2,6 +2,7 @@
   <kind>0</kind>
   <closed>0</closed>
   <precision>4</precision>
+<<<<<<< HEAD
   <backroom>1</backroom>
   <hsnap>16</hsnap>
   <vsnap>16</vsnap>
@@ -10,5 +11,21 @@
     <point>560,288,100</point>
     <point>560,48,100</point>
     <point>16,16,100</point>
+=======
+  <backroom>0</backroom>
+  <hsnap>16</hsnap>
+  <vsnap>16</vsnap>
+  <points>
+    <point>112,480,100</point>
+    <point>112,368,100</point>
+    <point>288,368,100</point>
+    <point>288,256,100</point>
+    <point>112,256,100</point>
+    <point>112,112,100</point>
+    <point>416,112,100</point>
+    <point>416,304,100</point>
+    <point>560,304,100</point>
+    <point>560,0,100</point>
+>>>>>>> f6d20ca0b552bd30aedf5f12c1d9604bbe5c8983
   </points>
 </path>

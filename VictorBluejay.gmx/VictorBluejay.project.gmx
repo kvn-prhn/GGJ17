@@ -5,9 +5,17 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\bullet</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\bullletobj</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\startRoom</room>
     <room>rooms\gameRoom1</room>

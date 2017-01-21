@@ -35,6 +35,9 @@
     <path>paths\room1_mob_path</path>
     <path>paths\main_menu_path</path>
   </paths>
+  <fonts name="fonts">
+    <font>fonts\font1</font>
+  </fonts>
   <objects name="objects">
     <object>objects\bullletobj</object>
     <object>objects\controller_1</object>

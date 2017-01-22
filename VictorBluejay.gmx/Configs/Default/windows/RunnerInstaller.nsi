@@ -46,8 +46,8 @@
 !define IMAGE_FINISHED      "Runner_finish.bmp"
 !endif
 
-!ifndef IMAGE_HEADER
-!define IMAGE_HEADER      "Runner_header.bmp"
+!ifndef IMAGE_ER
+!define IMAGE_ER      "Runner_er.bmp"
 !endif
 
 !ifndef PRODUCT_NAME
@@ -100,11 +100,11 @@ VIAddVersionKey /LANG=1033 "FileDescription" "${FILE_DESC}"
 
 
 
-!define MUI_HEADERIMAGE
-!define MUI_HEADERIMAGE_BITMAP_NOSTRETCH
+!define MUI_ERIMAGE
+!define MUI_ERIMAGE_BITMAP_NOSTRETCH
 !define MUI_ICON            "${ICON_FILE}"
 !define MUI_WELCOMEFINISHPAGE_BITMAP  "${IMAGE_FINISHED}"
-!define MUI_HEADERIMAGE_BITMAP      "${IMAGE_HEADER}"
+!define MUI_ERIMAGE_BITMAP      "${IMAGE_ER}"
 !define MUI_WELCOMEFINISHPAGE_BITMAP_NOSTRETCH
 
 

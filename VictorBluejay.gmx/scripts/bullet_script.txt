@@ -11,7 +11,7 @@ move_towards_point(tar.x, tar.y,15);
 //squirrel_bonus_x = 0; //100;
 //squirrel_bonus_y = 0; //100;
 
-look_ahead_amount = 30;
+look_a_amount = 30;
 turret_bullet_speed_hi = 60;
 
 /*

@@ -555,6 +555,7 @@
     <option_windows_nsis_file>Configs\Default\windows\RunnerInstaller.nsi</option_windows_nsis_file>
     <option_windows_product_info></option_windows_product_info>
     <option_windows_release_version>0</option_windows_release_version>
+    <option_windows_runner_er>Configs\Default\windows\Runner_er.bmp</option_windows_runner_er>
     <option_windows_runner_finished>Configs\Default\windows\Runner_finish.bmp</option_windows_runner_finished>
     <option_windows_runner_header>Configs\Default\windows\Runner_header.bmp</option_windows_runner_header>
     <option_windows_save_location>0</option_windows_save_location>

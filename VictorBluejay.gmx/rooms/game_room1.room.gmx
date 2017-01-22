@@ -78,8 +78,6 @@ global.bushes[3] = instance_create(520, 590, bush);
     <instance objName="trail_detail" x="99" y="61" name="inst_45D89D73" locked="0" code="" scaleX="15.75" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
     <instance objName="trail_detail" x="559" y="76" name="inst_33A30F03" locked="0" code="" scaleX="1.32258069515228" scaleY="14.1300001144409" colour="4294967295" rotation="0"/>
     <instance objName="trail_detail" x="598" y="497" name="inst_9FAFBD5E" locked="0" code="" scaleX="9.39000034332275" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_1" x="205" y="573" name="inst_E106C88C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_1" x="209" y="220" name="inst_CB3A7A24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="test_anim" x="280" y="122" name="inst_620B63A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_1_bullet" x="363" y="359" name="inst_33DDF467" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

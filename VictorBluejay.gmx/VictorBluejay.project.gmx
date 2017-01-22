@@ -50,6 +50,7 @@
     <sprite>sprites\exitbutton_img</sprite>
     <sprite>sprites\continuebutton_img</sprite>
     <sprite>sprites\bowlingpin</sprite>
+    <sprite>sprites\lane</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
@@ -60,6 +61,7 @@
     <background>background\transition_bg</background>
     <background>background\room1_bg</background>
     <background>background\room2_bg</background>
+    <background>background\blue</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\main_menu_path</path>
@@ -84,7 +86,6 @@
     <font>fonts\turret_info_text</font>
   </fonts>
   <objects name="objects">
-    <object>objects\controller_1</object>
     <object>objects\controller_1</object>
     <object>objects\controller_4</object>
     <object>objects\end_objective</object>
@@ -116,6 +117,7 @@
     <object>objects\bowlingpin_dropped</object>
     <object>objects\bulletobj_water</object>
     <object>objects\turret_info_menu</object>
+    <object>objects\trailbowlinglane</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>
@@ -125,11 +127,11 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\main_menu_room</room>
-    <room>rooms\game_room1</room>
+    <room>rooms\game_room4</room>
     <room>rooms\transition_room_1</room>
+    <room>rooms\game_room1</room>
     <room>rooms\game_room2</room>
     <room>rooms\game_room3</room>
-    <room>rooms\game_room4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

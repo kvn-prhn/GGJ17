@@ -26,46 +26,34 @@
           <argument>
             <kind>1</kind>
             <string>{
-spawnTower = instance_nearest(x,y,turret_1);
-move_towards_point(spawnTower.target.x, spawnTower.target.y,15);
+//spawnTower = instance_nearest(x,y,turret_1);
+tar = instance_nearest(x, y, normal_squirrel); // target for the bullet
+//move_towards_point(spawnTower.target.x, spawnTower.target.y,15);
+
+
+if (tar != noone) {
+
+move_towards_point(tar.x, tar.y,15);
+
 //squirrel_bonus_x = 0; //100;
 //squirrel_bonus_y = 0; //100;
 
 look_ahead_amount = 30;
-//squirrel_str = sprite_get_name(0).spawnTower.target;
 turret_bullet_speed_hi = 60;
-/*if (spawnTower.target.direction == 0){
-    squirrel_bonus_x = look_ahead_amount;
-}
-if (spawnTower.target.direction == 90){
-    squirrel_bonus_y = -look_ahead_amount;
-}
-if (spawnTower.target.direction == 180){
-    squirrel_bonus_x = -look_ahead_amount;
-}
-if (spawnTower.target.direction == 270){
-    squirrel_bonus_y = look_ahead_amount;
-}*/
-/*
-if (squirrel_str == squirrel_run_right){
-    squirrel_bonus_x = look_ahead_amount;
-}
-if (squirrel_str == squirrel_run_away){
-    squirrel_bonus_y = -look_ahead_amount;
-}
-if (squirrel_str == squirrel_run_left){
-    squirrel_bonus_x = -look_ahead_amount;
-}
-if (squirrel_str == squirrel_run_towards){
-    squirrel_bonus_y = look_ahead_amount;
-}
-*/
 
+/*
 squirrel_bonus_x = turret_bullet_speed_hi * cos(spawnTower.target.direction); //100;
 squirrel_bonus_y = -turret_bullet_speed_hi * sin(spawnTower.target.direction); //100;
 
 target_point_x = spawnTower.target.x + squirrel_bonus_x;
 target_point_y = spawnTower.target.y + squirrel_bonus_y;
+*/
+
+squirrel_bonus_x = turret_bullet_speed_hi * cos(tar.direction); //100;
+squirrel_bonus_y = -turret_bullet_speed_hi * sin(tar.direction); //100;
+
+target_point_x = tar.x + squirrel_bonus_x;
+target_point_y = tar.y + squirrel_bonus_y;
 
 squirrel_bonus_y += ((target_point_y - y) / 30);
 squirrel_bonus_x += ((target_point_x - x) / 30);
@@ -83,13 +71,10 @@ turret_diffY = turret_diffY / turret_magn;
 hspeed = turret_diffX * turret_bullet_speed_hi;
 vspeed = turret_diffY * turret_bullet_speed_hi;
 
-//hspeed = bullet_speed_hi*cos(image_angle);
-//vspeed = bullet_speed_hi*sin(image_angle);
-//show_message(image_angle);
 
+} // end if
 
 }
-
 </string>
           </argument>
         </arguments>

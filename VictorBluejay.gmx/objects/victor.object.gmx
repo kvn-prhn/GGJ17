@@ -29,8 +29,10 @@
 global.reflected = false;
 image_speed = 0.4;
 
+
 victor_message = "empty";
 goingLeft = false;
+
 // the item that victor is "holding:
 global.current_item = "nothing";
 
@@ -91,7 +93,7 @@ depth = -y;
 
 if(hspeed &lt; 0)
 sprite_index = victor_walkingL;
-else
+if(hspeed &gt; 0)
 sprite_index = victor_walkingR;
 
 if (keyboard_check(vk_up) || keyboard_check(ord('W'))) {
@@ -278,7 +280,8 @@ if (global.current_item == "gun"){
           <argument>
             <kind>1</kind>
             <string>// determines what chatch-phrase / one-liner victor says
-victor_message = "Lol wrekt";
+
+//victor_message = "Lol wrekt";
 
 
         
@@ -627,6 +630,30 @@ victor_message = "Lol wrekt";
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>95</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>9</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>

@@ -78,12 +78,11 @@ global.bushes[3] = instance_create(520, 590, bush);
     <instance objName="trail_detail" x="99" y="61" name="inst_45D89D73" locked="0" code="" scaleX="15.75" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
     <instance objName="trail_detail" x="559" y="76" name="inst_33A30F03" locked="0" code="" scaleX="1.32258069515228" scaleY="14.1300001144409" colour="4294967295" rotation="0"/>
     <instance objName="trail_detail" x="598" y="497" name="inst_9FAFBD5E" locked="0" code="" scaleX="9.39000034332275" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="test_anim" x="280" y="122" name="inst_620B63A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controller_1" x="30" y="48" name="inst_4E7D7839" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="victor" x="208" y="163" name="inst_0775D85C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_1" x="212" y="432" name="inst_B5ED3686" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_2" x="363" y="217" name="inst_BFADA858" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_3" x="525" y="555" name="inst_452121A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_3" x="723" y="63" name="inst_452121A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_4" x="703" y="412" name="inst_BD336645" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

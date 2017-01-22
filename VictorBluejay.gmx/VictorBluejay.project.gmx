@@ -6,9 +6,23 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\rustle</sound>
+
     <sound>sound\music_by_eric</sound>
   </sounds>
   <sprites name="sprites">
+
+    <sound>sound\gunshot</sound>
+    <sound>sound\fire_bow_shoot</sound>
+    <sound>sound\gunshot_rapid</sound>
+    <sound>sound\laser_shoot</sound>
+    <sound>sound\boink</sound>
+  </sounds>
+  <sprites name="sprites">
+    <sprite>sprites\victor_walkingL</sprite>
+    <sprite>sprites\victor_walkingR</sprite>
+
+
+
     <sprite>sprites\end_objective_sprite</sprite>
     <sprite>sprites\towerSprite1</sprite>
     <sprite>sprites\towerSprite2</sprite>
@@ -57,7 +71,9 @@
     <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
+    <object>objects\victor</object>
     <object>objects\test_anim</object>
+    <object>objects\main_menu_controller1</object>
     <object>objects\controller_1</object>
     <object>objects\controller_3</object>
     <object>objects\controller_4</object>
@@ -66,18 +82,15 @@
     <object>objects\mirror_dropped</object>
     <object>objects\bush</object>
     <object>objects\trail_detail</object>
-    <object>objects\main_menu_controller1</object>
     <object>objects\turret_1</object>
     <object>objects\turret_1_bullet</object>
     <object>objects\turret_2</object>
     <object>objects\turret_4</object>
     <object>objects\turret_4_bullet</object>
-    <object>objects\victor</object>
     <object>objects\normal_squirrel</object>
     <object>objects\turret_2_bullet</object>
     <object>objects\turret_3_bullet</object>
     <object>objects\turret_3</object>
-    <object>objects\bullletobj</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner_main_menu</timeline>
@@ -89,9 +102,6 @@
   <rooms name="rooms">
     <room>rooms\main_menu_room</room>
     <room>rooms\game_room1</room>
-    <room>rooms\game_room2</room>
-    <room>rooms\game_room3</room>
-    <room>rooms\game_room4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

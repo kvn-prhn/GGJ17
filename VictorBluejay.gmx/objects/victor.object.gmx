@@ -29,6 +29,10 @@
 global.reflected = false;
 image_speed = 0.4;
 
+
+victor_message = "empty";
+goingLeft = false;
+
 // the item that victor is "holding:
 global.current_item = "nothing";
 
@@ -96,7 +100,7 @@ depth = -y;
 
 if(hspeed &lt; 0)
 sprite_index = victor_walkingL;
-else
+if(hspeed &gt; 0)
 sprite_index = victor_walkingR;
 
 if (keyboard_check(vk_up) || keyboard_check(ord('W'))) {
@@ -110,9 +114,11 @@ if (keyboard_check(vk_up) || keyboard_check(ord('W'))) {
 
 if (keyboard_check(vk_left) || keyboard_check(ord('A'))) {
     hspeed = -global.victor_speed;
+    goingLeft = true;
 
 } else if (keyboard_check(vk_right) || keyboard_check(ord('D'))) {
     hspeed = global.victor_speed;
+    goingLeft = false;
 
 } else {
     hspeed = 0;
@@ -267,6 +273,32 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){
     <event eventtype="8" enumb="73">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// determines what chatch-phrase / one-liner victor says
+
+//victor_message = "Lol wrekt";
+
+
+        
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>524</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -287,8 +319,36 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){
       </action>
       <action>
         <libid>1</libid>
-        <id>605</id>
+        <id>612</id>
         <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>-1</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>victor_message</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>"empty"</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
@@ -298,10 +358,32 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>if turret_type == destroyed</string>
+            <kind>0</kind>
+            <string>goingLeft</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -339,15 +421,67 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-16</string>
+            <string>-18</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>-14</string>
           </argument>
           <argument>
             <kind>0</kind>
             <string>-1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>526</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_font</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>12</kind>
+            <font>victor_s_font</font>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>514</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_text</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>""+string(victor_message)</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-56</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-42</string>
           </argument>
         </arguments>
       </action>
@@ -367,6 +501,34 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){
       </action>
       <action>
         <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>goingLeft</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>422</id>
         <kind>1</kind>
         <userelative>0</userelative>
@@ -378,6 +540,128 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>501</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_sprite</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>victor_chat_right</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>18</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-14</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>526</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_font</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>12</kind>
+            <font>victor_s_font</font>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>514</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_text</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>""+string(victor_message)</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>18</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-42</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>95</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>9</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>

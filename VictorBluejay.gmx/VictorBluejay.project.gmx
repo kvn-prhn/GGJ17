@@ -101,6 +101,8 @@
     <object>objects\optionsbutton</object>
     <object>objects\exitbutton</object>
     <object>objects\continuebutton</object>
+    <object>objects\watergun_dropped</object>
+    <object>objects\bowlingpin_dropped</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner_main_menu</timeline>

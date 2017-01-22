@@ -223,7 +223,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>boink</sound>
+            <sound>-100</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -431,7 +431,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>victor_chat_left</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -571,7 +571,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>victor_chat_right</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -760,7 +760,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>gunSprite</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -834,7 +834,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>mirrorSprite</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -908,7 +908,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>end_objective_sprite</sprite>
+            <sprite>watergunSpr</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -982,7 +982,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>trail</sprite>
+            <sprite>bowlingpin</sprite>
           </argument>
           <argument>
             <kind>0</kind>

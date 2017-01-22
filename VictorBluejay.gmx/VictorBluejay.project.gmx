@@ -48,6 +48,7 @@
     <sprite>sprites\continuebutton_img</sprite>
     <sprite>sprites\tower_1_rusted</sprite>
     <sprite>sprites\waterBullet</sprite>
+    <sprite>sprites\bowlingpin</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>

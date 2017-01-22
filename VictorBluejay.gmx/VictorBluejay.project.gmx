@@ -16,6 +16,7 @@
     <sound>sound\water_splat</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\watergunSpr</sprite>
     <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\victor_walkingR</sprite>
     <sprite>sprites\victor_idle</sprite>
@@ -45,6 +46,8 @@
     <sprite>sprites\optionsbutton_img</sprite>
     <sprite>sprites\exitbutton_img</sprite>
     <sprite>sprites\continuebutton_img</sprite>
+    <sprite>sprites\tower_1_rusted</sprite>
+    <sprite>sprites\waterBullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>

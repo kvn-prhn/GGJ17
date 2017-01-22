@@ -120,7 +120,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>current_item</string>
+            <string>global.current_item</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -148,7 +148,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>bullletobj</object>
+            <object>turret_2</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -165,6 +165,70 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.current_item</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>"mirror"</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>206</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_create_object_motion</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>10</kind>
+            <object>turret_3_bullet</object>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>turret_3.x</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>turret_3.y</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>3</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>90</string>
           </argument>
         </arguments>
       </action>
@@ -214,7 +278,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>gunSprite</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -288,7 +352,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>mirrorSprite</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -370,6 +434,8 @@ if (global.current_item == "nothing") {
             if (nearest_bush.contents != "nothing") {
                 global.current_item = nearest_bush.contents;
                 nearest_bush.contents = "nothing";
+                // play a leaf rustle sound
+                audio_play_sound(rustle, 10, false);
                 interacted = true;
             }
         }

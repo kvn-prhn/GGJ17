@@ -459,6 +459,8 @@ draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed));
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
+    </event>
+    <event eventtype="4" ename="turret_4">
       <action>
         <libid>1</libid>
         <id>612</id>
@@ -627,6 +629,7 @@ score = score + 1;
         <isnot>0</isnot>
       </action>
     </event>
+
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>

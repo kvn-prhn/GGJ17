@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>{
 spawnTower = instance_nearest(x,y,turret_1);
+<<<<<<< HEAD
 move_towards_point(spawnTower.target.x, spawnTower.target.y,15);
 //squirrel_bonus_x = 0; //100;
 //squirrel_bonus_y = 0; //100;
@@ -66,11 +67,41 @@ squirrel_bonus_y = -turret_bullet_speed_hi * sin(spawnTower.target.direction); /
 
 target_point_x = spawnTower.target.x + squirrel_bonus_x;
 target_point_y = spawnTower.target.y + squirrel_bonus_y;
+=======
+//move_towards_point(spawnTower.target.x, spawnTower.target.y,15)
+squirrel_bonus_x = 0; //100;
+squirrel_bonus_y = 0; //100;
+
+look_ahead_amount = 30;
+
+turret_bullet_speed_hi = 15;
+
+if (spawnTower != undefined &amp;&amp; spawnTower != noone &amp;&amp;
+    spawnTower.target != noone) {
+    
+    if (spawnTower.target.direction == 0){
+        squirrel_bonus_x = look_ahead_amount;
+    }
+    if (spawnTower.target.direction == 90){
+        squirrel_bonus_y = -look_ahead_amount;
+    }
+    if (spawnTower.target.direction == 180){
+        squirrel_bonus_x = -look_ahead_amount;
+    }
+    if (spawnTower.target.direction == 270){
+        squirrel_bonus_y = look_ahead_amount;
+    }
+>>>>>>> 6a4ad8be7be2eb686431ccb0130cb42fff35a485
 
 squirrel_bonus_y += ((target_point_y - y) / 30);
 squirrel_bonus_x += ((target_point_x - x) / 30);
 
+<<<<<<< HEAD
 image_angle = point_direction(x, y, target_point_x, target_point_y);
+=======
+
+image_angle = 0; //point_direction(x, y, spawnTower.target.x, spawnTower.target.y);
+>>>>>>> 6a4ad8be7be2eb686431ccb0130cb42fff35a485
 //image_angle = point_direction(x, y, spawnTower.target.x + squirrel_bonus_x, spawnTower.target.y + squirrel_bonus_y);
 // calculate direction vector towards target
 turret_diffX = (target_point_x) - x;
@@ -86,8 +117,15 @@ vspeed = turret_diffY * turret_bullet_speed_hi;
 //hspeed = bullet_speed_hi*cos(image_angle);
 //vspeed = bullet_speed_hi*sin(image_angle);
 //show_message(image_angle);
+} // end the behavior
+else {
+    instance_destroy(); // destory bullets that have no tower
+
 }
 
+
+
+}
 
 </string>
           </argument>

@@ -21,5 +21,7 @@
   <height>128</height>
   <frames>
     <frame index="0">images\towerSprite2_0.png</frame>
+    <frame index="1">images\towerSprite2_1.png</frame>
+    <frame index="2">images\towerSprite2_2.png</frame>
   </frames>
 </sprite>

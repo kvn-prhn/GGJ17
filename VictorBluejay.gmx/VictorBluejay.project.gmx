@@ -49,9 +49,7 @@
     <sprite>sprites\tower_1_rusted</sprite>
     <sprite>sprites\tower_3_explosion</sprite>
     <sprite>sprites\waterBullet</sprite>
-
     <sprite>sprites\bowlingpin</sprite>
-
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
@@ -74,6 +72,8 @@
     <script>scripts\turret_fire.gml</script>
     <script>scripts\neg_y.gml</script>
     <script>scripts\turret_draw_radius.gml</script>
+    <script>scripts\turret_info_display_hover.gml</script>
+    <script>scripts\turret_info_display_leave.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
@@ -112,6 +112,7 @@
     <object>objects\watergun_dropped</object>
     <object>objects\bowlingpin_dropped</object>
     <object>objects\bulletobj_water</object>
+    <object>objects\turret_info_menu</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner_main_menu</timeline>

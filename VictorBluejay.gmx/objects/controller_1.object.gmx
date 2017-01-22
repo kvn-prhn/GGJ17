@@ -32,6 +32,8 @@ global.squirrel_survival_count = 0;
 
 global.current_path = room1_mob_path;
 
+global.info_menu = undefined;
+
 }
 </string>
           </argument>

@@ -25,13 +25,14 @@ global.controller_for_room.num_squirrels_to_pass = 6;       // how many need to 
 //keep track of bushes
 global.bushes[0] = instance_create(350, 710, bush);
 // bush 0 has a water gun
-global.bushes[0].contents = "mirror";
+global.bushes[0].contents = "gun";
 
 global.bushes[1] = instance_create(900, 570, bush);
-global.bushes[1].content = "watergun";
+
 
 global.bushes[2] = instance_create(450, 100, bush);
 global.bushes[3] = instance_create(190, 290, bush);
+global.bushes[3].contents = "mirror";
 global.bushes[4] = instance_create(930, 160, bush);
 
 }</code>
@@ -76,8 +77,9 @@ global.bushes[4] = instance_create(930, 160, bush);
   </views>
   <instances>
     <instance objName="end_objective" x="813" y="-30" name="inst_A5697732" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_3" x="457" y="507" name="inst_172B5ABA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_3" x="441" y="241" name="inst_172B5ABA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="victor" x="170" y="701" name="inst_F6401B93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_2" x="211" y="366" name="inst_3CC0B096" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

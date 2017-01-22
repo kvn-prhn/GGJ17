@@ -271,7 +271,7 @@
             <kind>1</kind>
             <string>{
 // display text about turret_info
-
+if(turret_info.t_health != 0){
 // dipsplay health
 draw_text(x + 5, y + 10, "Health: " + string(turret_info.t_health));
 
@@ -280,6 +280,7 @@ draw_text(x + 5, y + 30, "Fire rate: " + string(turret_info.fire_rate));
 
 // display radius
 draw_text(x + 5, y + 50, "Radius: " + string(turret_info.radius));
+}
 
 }
 </string>

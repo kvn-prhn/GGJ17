@@ -285,8 +285,8 @@
             <kind>1</kind>
             <string>{
 if(global.reflected == true){
-    tower3health -= 5;
-    if (tower3health &lt;= 0){
+    t_health -= 5;
+    if (t_health &lt;= 0){
         instance_destroy();
     }
 }

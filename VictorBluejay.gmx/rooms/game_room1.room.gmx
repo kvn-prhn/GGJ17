@@ -11,6 +11,7 @@
   <colour>255</colour>
   <showcolour>-1</showcolour>
   <code>{
+
 global.steps = 0;
 
 global.controller_for_room = instance_create(0, 0, controller_1);
@@ -76,6 +77,8 @@ global.bushes[3] = instance_create(900, 590, bush);
   <instances>
     <instance objName="end_objective" x="870" y="-29" name="inst_801E2AA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="victor" x="523" y="84" name="inst_E22953ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_1" x="239" y="271" name="inst_8238B1E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_1" x="776" y="510" name="inst_B7F05B40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -265,7 +265,7 @@ draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed));
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>squirrel_run_away</sprite>
+            <sprite>squirrel_run_towards</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -273,7 +273,7 @@ draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed));
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>0.4</string>
           </argument>
         </arguments>
       </action>
@@ -357,7 +357,7 @@ draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed));
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>0.4</string>
           </argument>
         </arguments>
       </action>
@@ -433,7 +433,7 @@ draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed));
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>squirrel_run_right</sprite>
+            <sprite>squirrel_run_left</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -441,7 +441,7 @@ draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed));
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>0.4</string>
           </argument>
         </arguments>
       </action>
@@ -517,7 +517,7 @@ draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed));
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>squirrel_run_left</sprite>
+            <sprite>squirrel_run_right</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -525,7 +525,7 @@ draw_text(x, y - 20, "Squirrel hspeed: " + string(normal_squirrel.hspeed));
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>0.4</string>
           </argument>
         </arguments>
       </action>

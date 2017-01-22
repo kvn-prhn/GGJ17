@@ -131,6 +131,7 @@
     <timeline>timelines\squirrel_spawner</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\testingTurrets</room>
     <room>rooms\main_menu_room</room>
     <room>rooms\game_room1</room>
     <room>rooms\transition_room_1</room>

@@ -16,7 +16,7 @@ global.steps = 0;
 global.controller_for_room = instance_create(0, 0, controller_1);
 // all of the values for this level
 global.controller_for_room.current_path = room1_mob_path;  // ppath to follow
-global.controller_for_room.num_squirrels = 5;              // how many will spawn
+global.controller_for_room.num_squirrels = 10;              // how many will spawn
 global.controller_for_room.num_squirrels_to_pass = 6;       // how many need to survive to pass room
 
 

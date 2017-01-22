@@ -34,6 +34,9 @@ global.current_item = "nothing";
 
 v_health = 10;
 
+v_gun_cooldown_max = 15;
+v_gun_cooldown = 0;
+
 }
 </string>
           </argument>
@@ -83,6 +86,10 @@ global.reflected = false;
           <argument>
             <kind>1</kind>
             <string>{
+
+if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &gt; 0) {
+    v_gun_cooldown--;
+}
 
 global.victor_speed = 3;
 depth = -y;
@@ -245,9 +252,10 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
             <string>{
 var homingBullet;
 
-if (global.current_item == "gun"){
+if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){
     audio_play_sound(gunshot, 1, 0);
     instance_create(x, y, bullletobj);
+    v_gun_cooldown = v_gun_cooldown_max; // reset the gun timer
 }
 
 }

@@ -11,6 +11,7 @@
     <sound>sound\gunshot_rapid</sound>
     <sound>sound\laser_shoot</sound>
     <sound>sound\boink</sound>
+    <sound>sound\button_press1</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\victor_chat_left</sprite>
@@ -39,6 +40,7 @@
     <sprite>sprites\playbutton_img</sprite>
     <sprite>sprites\optionsbutton_img</sprite>
     <sprite>sprites\exitbutton_img</sprite>
+    <sprite>sprites\continuebutton_img</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
@@ -46,6 +48,7 @@
     <background>background\forest_bg</background>
     <background>background\city_bg</background>
     <background>background\title_bg</background>
+    <background>background\transition_bg</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\main_menu_path</path>
@@ -89,6 +92,7 @@
     <object>objects\playbutton</object>
     <object>objects\optionsbutton</object>
     <object>objects\exitbutton</object>
+    <object>objects\continuebutton</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner_main_menu</timeline>
@@ -100,6 +104,7 @@
   <rooms name="rooms">
     <room>rooms\main_menu_room</room>
     <room>rooms\game_room1</room>
+    <room>rooms\transition_room_1</room>
     <room>rooms\game_room2</room>
     <room>rooms\game_room3</room>
     <room>rooms\game_room4</room>

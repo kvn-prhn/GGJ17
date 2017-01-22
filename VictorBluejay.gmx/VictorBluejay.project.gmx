@@ -79,6 +79,7 @@
     <font>fonts\font1</font>
     <font>fonts\font2</font>
     <font>fonts\victor_s_font</font>
+    <font>fonts\turret_info_text</font>
   </fonts>
   <objects name="objects">
     <object>objects\test_anim</object>

@@ -91,7 +91,8 @@ global.reflected = false;
             <kind>1</kind>
             <string>{
 
-if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &gt; 0) {
+if ((global.current_item == "gun" || global.current_item == "watergun")
+            &amp;&amp; v_gun_cooldown &gt; 0) {
     v_gun_cooldown--;
 }
 
@@ -265,11 +266,17 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
             <string>{
 var homingBullet;
 
-if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){
+if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){              // normal gun
     audio_play_sound(gunshot, 1, 0);
     instance_create(x, y, bullletobj);
     v_gun_cooldown = v_gun_cooldown_max; // reset the gun timer
+    
+} else if (global.current_item == "watergun" &amp;&amp; v_gun_cooldown &lt;= 0){  // water gun
+    audio_play_sound(gunshot, 1, 0);
+    instance_create(x, y, bulletobj_water);
+    v_gun_cooldown = v_gun_cooldown_max; // reset the gun timer
 }
+
 
 }
 </string>
@@ -843,6 +850,154 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.current_item</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>"watergun"</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>501</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_sprite</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>end_objective_sprite</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-16</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-16</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.current_item</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>"bowlingpin"</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>501</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_sprite</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>trail</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-16</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-16</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="9" enumb="32">
       <action>
@@ -892,6 +1047,32 @@ if (global.current_item == "nothing") {
             interacted = true;
         }
     }
+    
+    // Look for a water gun
+    nearest_wgun = instance_nearest(x, y, watergun_dropped);
+    if (!interacted &amp;&amp; instance_exists(nearest_wgun) /*nearest_mirror != undefined*/) {
+        dist_away = distance_to_point(nearest_wgun.x, nearest_wgun.y);
+        // pick up the gun if it's close enough
+        if (dist_away &lt; 15) {
+            global.current_item = "watergun";
+            with(nearest_wgun) instance_destroy();
+            interacted = true;
+        }
+    }
+    
+    
+    // Look for a bowling pin
+    nearest_pin = instance_nearest(x, y, bowlingpin_dropped);
+    if (!interacted &amp;&amp; instance_exists(nearest_pin) /*nearest_mirror != undefined*/) {
+        dist_away = distance_to_point(nearest_pin.x, nearest_pin.y);
+        // pick up the gun if it's close enough
+        if (dist_away &lt; 15) {
+            global.current_item = "bowlingpin";
+            with(nearest_pin) instance_destroy();
+            interacted = true;
+        }
+    }
+    
 
     // find a nearby bush to search
     nearest_bush = instance_nearest(x, y, bush);
@@ -927,6 +1108,16 @@ if (global.current_item == "nothing") {
     global.current_item = "nothing";
     // put the dropped mirror on ground
     instance_create(x, y, mirror_dropped);
+} else if (global.current_item == "watergun") {
+    // drop the water gun
+    global.current_item = "nothing";
+    // put the dropped water gun on ground
+    instance_create(x, y, watergun_dropped);
+} else if (global.current_item == "bowlingpin") {
+    // drop the bowling pin
+    global.current_item = "nothing";
+    // put the dropped bowling pin on ground
+    instance_create(x, y, bowlingpin_dropped);
 }
 
 }

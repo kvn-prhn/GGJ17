@@ -65,6 +65,7 @@
     <script>scripts\bullet_script.gml</script>
     <script>scripts\turret_fire.gml</script>
     <script>scripts\neg_y.gml</script>
+    <script>scripts\turret_draw_radius.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>

@@ -194,7 +194,14 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// reflect the bullet - bullletobj
+            <string>{
+
+    // reverse the bullet direction
+    other.direction = other.direction + 180;
+    global.reflected = true;
+
+}
+
 </string>
           </argument>
         </arguments>

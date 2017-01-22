@@ -20,12 +20,16 @@ global.bushes[0] = instance_create(40, 400, bush);
 global.bushes[0].contents = "gun";
 
 global.bushes[1] = instance_create(180, 240, bush);
+// bush 1 has a water gun
+global.bushes[1].contents = "watergun";
 
 global.bushes[2] = instance_create(460, 130, bush);
 // bush 2 has a mirror
 global.bushes[2].contents = "mirror";
 
 global.bushes[3] = instance_create(520, 590, bush);
+// bush 3 has a bowling pin
+global.bushes[3].contents = "bowlingpin";
 
 }</code>
   <enableViews>0</enableViews>
@@ -84,6 +88,7 @@ global.bushes[3] = instance_create(520, 590, bush);
     <instance objName="turret_3" x="723" y="63" name="inst_452121A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_4" x="703" y="412" name="inst_BD336645" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="victor" x="199" y="163" name="inst_E22953ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="664" y="554" name="inst_1304C2B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -157,41 +157,52 @@
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>turret_fire</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>{ 
+// This script is a specialized version of turret_fire script
+
+if (bullet_type == undefined) {
+    bullet_type = turret_1_bullet
+}
+
+depth = -y;
+coolDown = coolDown -1;
+
+// try to find a dropped bowling pin first
+target = instance_nearest(x, y, bowlingpin_dropped)
+
+// only try to find a  nearby squirrel if there is no bowling pin nearby
+if (target == noone || distance_to_object(target) &gt;= radius) {
+    target = instance_nearest(x, y, normal_squirrel);
+}
+
+if(distance_to_object(target) &lt; radius){
+    if (coolDown &lt;= 0){
+        bullet = instance_create(x,y,bullet_type);
+        bullet.tar = target;
+        coolDown = fire_rate;    
+        if (fire_sound_effect != undefined) {
+            audio_play_sound(fire_sound_effect, 8, false);
+        }
+    }
+}
+
+}
+
+</string>
           </argument>
         </arguments>
       </action>

@@ -1,10 +1,15 @@
 {
 //spawnTower = instance_nearest(x,y,turret_1);
-tar = instance_nearest(x, y, normal_squirrel); // target for the bullet
+//tar = instance_nearest(x, y, normal_squirrel); // target for the bullet
 //move_towards_point(spawnTower.target.x, spawnTower.target.y,15);
+
+if (find_target == false) {
+    
 
 
 if (tar != noone) {
+
+find_target = true;
 
 move_towards_point(tar.x, tar.y,15);
 
@@ -46,5 +51,7 @@ vspeed = turret_diffY * turret_bullet_speed_hi;
 
 
 } // end if
+
+} // end debounce
 
 }

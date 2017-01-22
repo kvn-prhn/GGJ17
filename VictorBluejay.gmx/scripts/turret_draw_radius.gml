@@ -1,2 +1,2 @@
-draw_circle(x, y, radius, true);
+draw_circle(x, y, radius*2, true);
 

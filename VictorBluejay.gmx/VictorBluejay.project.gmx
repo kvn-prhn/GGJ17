@@ -86,6 +86,7 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\main_menu_room</room>
+    <room>rooms\game_room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

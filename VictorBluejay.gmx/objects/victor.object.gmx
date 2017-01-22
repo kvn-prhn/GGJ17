@@ -157,7 +157,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>bullletobj</object>
+            <object>-100</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -221,7 +221,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>mirror_dropped</object>
+            <object>turret_3_bullet</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -237,7 +237,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
           </argument>
           <argument>
             <kind>0</kind>
-            <string>90</string>
+            <string>abs(tan((turret_3.x - victor.x) / (turret_3.y - victor.y)))</string>
           </argument>
         </arguments>
       </action>

@@ -50,6 +50,7 @@
     <sprite>sprites\exitbutton_img</sprite>
     <sprite>sprites\continuebutton_img</sprite>
     <sprite>sprites\bowlingpin</sprite>
+    <sprite>sprites\tryagainbutton_img</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
@@ -76,6 +77,7 @@
     <script>scripts\turret_draw_radius.gml</script>
     <script>scripts\turret_info_display_hover.gml</script>
     <script>scripts\turret_info_display_leave.gml</script>
+    <script>scripts\increment_squirrels_spawned.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
@@ -84,7 +86,6 @@
     <font>fonts\turret_info_text</font>
   </fonts>
   <objects name="objects">
-    <object>objects\controller_1</object>
     <object>objects\controller_1</object>
     <object>objects\controller_4</object>
     <object>objects\end_objective</object>
@@ -116,6 +117,7 @@
     <object>objects\bowlingpin_dropped</object>
     <object>objects\bulletobj_water</object>
     <object>objects\turret_info_menu</object>
+    <object>objects\tryagainbutton</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>

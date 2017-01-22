@@ -448,7 +448,17 @@ if(global.current_item == "bowlingpin")
     
 if(global.current_item == "watergun")
     draw_sprite_stretched(watergunSpr, 0, room_width - 110, room_height - 70, 64, 64);
+
+// DEBUG STUFF
+draw_text(300, 50, "number spawned: " + string(num_squirrels_spawned));
+draw_text(300, 80, "number remaining: " + string(instance_number(normal_squirrel)) );
+
+// END DEBUG
+
+
 }
+
+
 
 </string>
           </argument>

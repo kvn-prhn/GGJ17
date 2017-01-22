@@ -32,6 +32,8 @@ global.squirrel_survival_count = 0;
 
 global.current_path = room1_mob_path;
 
+global.info_menu = undefined;
+
 }
 </string>
           </argument>
@@ -54,34 +56,6 @@ global.current_path = room1_mob_path;
           <argument>
             <kind>0</kind>
             <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>201</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>normal_squirrel</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>112</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>480</string>
           </argument>
         </arguments>
       </action>
@@ -455,34 +429,6 @@ global.current_path = room1_mob_path;
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>703</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_score</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>800</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>50</string>
-          </argument>
-          <argument>
-            <kind>1</kind>
-            <string>Safetly Passed: </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -497,7 +443,7 @@ global.current_path = room1_mob_path;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
+            <string>
 {
 draw_set_font(font1);
 draw_set_alpha(.75);
@@ -517,7 +463,7 @@ if(global.current_item == "mirror")
 if(global.current_item == "gun")
     draw_sprite(gunSprite, 0, room_width - 80, room_height - 40);
 }
-*/
+
 </string>
           </argument>
         </arguments>

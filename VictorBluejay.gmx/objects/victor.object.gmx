@@ -431,7 +431,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-100</sprite>
+            <sprite>victor_chat_left</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -495,7 +495,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-56</string>
+            <string>-58</string>
           </argument>
         </arguments>
       </action>
@@ -571,7 +571,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-100</sprite>
+            <sprite>victor_chat_right</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -760,7 +760,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-100</sprite>
+            <sprite>gunSprite</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -834,7 +834,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-100</sprite>
+            <sprite>mirrorSprite</sprite>
           </argument>
           <argument>
             <kind>0</kind>

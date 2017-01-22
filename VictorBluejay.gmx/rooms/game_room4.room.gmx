@@ -10,7 +10,34 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>{
+global.steps = 0;
+
+global.controller_for_room = instance_create(0, 0, controller_1);
+// all of the values for this level
+
+global.current_path = room4_mob_path;  // ppath to follow
+global.controller_for_room.num_squirrels = 5;              // how many will spawn
+
+global.controller_for_room.num_squirrels_to_pass = 1;       // how many need to survive to pass room
+
+
+
+//keep track of bushes
+global.bushes[0] = instance_create(270, 80, bush);
+global.bushes[1] = instance_create(430, 310, bush);
+global.bushes[2] = instance_create(730, 290, bush);
+global.bushes[3] = instance_create(900, 590, bush);
+// bush 0 has a water gun
+global.bushes[0].contents = "watergun";
+global.bushes[1].contents = "gun";
+global.bushes[2].contents = "mirror";
+global.bushes[3].contents = "bowlingpin";
+
+
+
+
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -31,8 +58,8 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="city_bg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="blue" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -52,9 +79,61 @@
   </views>
   <instances>
     <instance objName="end_objective" x="992" y="0" name="inst_C4DF667E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="160" y="320" name="inst_49D59100" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="416" y="192" name="inst_53B5E9B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="672" y="448" name="inst_D160C2BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+
+    <instance objName="trail_detail" x="160" y="288" name="inst_366DE549" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="victor" x="640" y="96" name="inst_D0CF2FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_2" x="224" y="672" name="inst_8E11FF44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_3" x="96" y="288" name="inst_7EE95E00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="640" y="192" name="inst_272F9ED9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="512" y="192" name="inst_3EAD3AE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="384" y="192" name="inst_8FE30190" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="0" y="384" name="inst_6377F85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="128" y="192" name="inst_63F43F77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="256" y="192" name="inst_4167C84B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="768" y="192" name="inst_0459246C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="896" y="192" name="inst_73AD2C62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_4" x="960" y="256" name="inst_34438A00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="0" y="192" name="inst_465EE347" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="0" y="576" name="inst_177DA4CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="128" y="576" name="inst_C5CAEED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="256" y="576" name="inst_75D15CA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="384" y="576" name="inst_501F42F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="512" y="576" name="inst_8310436A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="640" y="576" name="inst_CAAAB059" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="768" y="576" name="inst_C2B9EB3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="896" y="576" name="inst_A087069C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="128" y="384" name="inst_5E8DDB41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="256" y="384" name="inst_5C0140C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="384" y="384" name="inst_2B72D03F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="512" y="384" name="inst_88DAACE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="640" y="384" name="inst_1D4161E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="768" y="384" name="inst_08642249" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trailbowlinglane" x="896" y="384" name="inst_933A2A93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_4" x="960" y="448" name="inst_EEEE7562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_4" x="960" y="640" name="inst_8537428F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="0" y="192" name="inst_6B3A9810" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="0" y="288" name="inst_F9D7C8A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="0" y="384" name="inst_9F5370DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="0" y="448" name="inst_1ED307B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="0" y="480" name="inst_C0DCD525" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="32" y="448" name="inst_F8AA8C51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="32" y="416" name="inst_04396265" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="0" y="576" name="inst_CA13D996" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="0" y="672" name="inst_6E7B021D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="32" y="672" name="inst_937CC7D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="64" y="672" name="inst_D7877D76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="96" y="672" name="inst_85D3F3CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="32" y="640" name="inst_63EB838F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="64" y="640" name="inst_03A9FC60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="0" y="608" name="inst_A3EF7303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="0" y="640" name="inst_7758CEEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bowlingpin_dropped" x="32" y="608" name="inst_0475A83A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="controller_1" x="0" y="736" name="inst_CDEF93FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_1" x="608" y="96" name="inst_02141248" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="mirror_dropped" x="96" y="32" name="inst_ED3AEC5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="gun_dropped" x="32" y="32" name="inst_A50EC730" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="watergun_dropped" x="160" y="32" name="inst_1B1118BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+>>>>>>> 5f204b5fbd5d3052472a08c1b77be51d35254d3a
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

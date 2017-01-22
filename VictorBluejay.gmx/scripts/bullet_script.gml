@@ -7,7 +7,7 @@ if (find_target == false) {
     
 
 
-if (tar != noone) {
+if (instance_exists(tar) && tar != noone) { //if (tar != undefined && tar != noone) {
 
 find_target = true;
 

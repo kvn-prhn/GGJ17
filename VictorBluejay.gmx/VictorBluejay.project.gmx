@@ -50,11 +50,8 @@
     <sprite>sprites\exitbutton_img</sprite>
     <sprite>sprites\continuebutton_img</sprite>
     <sprite>sprites\bowlingpin</sprite>
-<<<<<<< HEAD
     <sprite>sprites\tryagainbutton_img</sprite>
-=======
     <sprite>sprites\restart_button</sprite>
->>>>>>> ca5a1af0795fa9ae97cd97207df8bf6995b83826
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
@@ -117,11 +114,8 @@
     <object>objects\bowlingpin_dropped</object>
     <object>objects\bulletobj_water</object>
     <object>objects\turret_info_menu</object>
-<<<<<<< HEAD
     <object>objects\tryagainbutton</object>
-=======
     <object>objects\restart_button1</object>
->>>>>>> ca5a1af0795fa9ae97cd97207df8bf6995b83826
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>

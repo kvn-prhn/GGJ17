@@ -84,7 +84,6 @@
     <font>fonts\turret_info_text</font>
   </fonts>
   <objects name="objects">
-    <object>objects\main_menu_controller1</object>
     <object>objects\controller_1</object>
     <object>objects\controller_1</object>
     <object>objects\controller_4</object>
@@ -119,7 +118,6 @@
     <object>objects\turret_info_menu</object>
   </objects>
   <timelines name="timelines">
-    <timeline>timelines\squirrel_spawner_main_menu</timeline>
     <timeline>timelines\squirrel_spawner</timeline>
     <timeline>timelines\squirrel_spawner2</timeline>
     <timeline>timelines\squirrel_spawner3</timeline>

@@ -102,7 +102,7 @@
             <string>{
 depth = -y;
 coolDown = coolDown -1;
-target = instance_nearest(x, y, normal_squirrel);
+//target = instance_nearest(x, y, normal_squirrel);
 
 if(distance_to_object(normal_squirrel) &lt; radius){
     if (coolDown &lt;= 0){

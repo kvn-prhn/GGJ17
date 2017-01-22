@@ -11,42 +11,41 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>{
-spawnTower = instance_nearest(x,y,turret_4);
-move_towards_point(spawnTower.target.x, spawnTower.target.y,15)
-
-turret_bullet_speed_hi = 15;
-image_angle = point_direction(x, y, spawnTower.target.x, spawnTower.target.y);
-// calculate direction vector towards mouse 
-turret_diffX = spawnTower.target.x - x;
-turret_diffY = spawnTower.target.y - y;
-// normalize direction vector
-turret_magn = sqrt((turret_diffX * turret_diffX) + (turret_diffY * turret_diffY));
-turret_diffX = turret_diffX / turret_magn;
-turret_diffY = turret_diffY / turret_magn;
-// set speed
-hspeed = turret_diffX * turret_bullet_speed_hi;
-vspeed = turret_diffY * turret_bullet_speed_hi;
-
-//hspeed = bullet_speed_hi*cos(image_angle);
-//vspeed = bullet_speed_hi*sin(image_angle);
-//show_message(image_angle);
-}
-</string>
+            <kind>9</kind>
+            <script>bullet_script</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

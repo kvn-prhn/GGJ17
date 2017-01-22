@@ -58,6 +58,7 @@
     <background>background\city_bg</background>
     <background>background\title_bg</background>
     <background>background\transition_bg</background>
+    <background>background\room1_bg</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\main_menu_path</path>

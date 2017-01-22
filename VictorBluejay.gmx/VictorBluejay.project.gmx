@@ -80,6 +80,7 @@
     <object>objects\turret_2_bullet</object>
     <object>objects\turret_3_bullet</object>
     <object>objects\turret_3</object>
+    <object>objects\bullletobj</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner_main_menu</timeline>

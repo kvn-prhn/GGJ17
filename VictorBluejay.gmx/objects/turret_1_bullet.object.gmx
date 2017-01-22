@@ -27,14 +27,14 @@
             <kind>1</kind>
             <string>{
 spawnTower = instance_nearest(x,y,turret_1);
-move_towards_point(spawnTower.target.x, spawnTower.target.y,15)
+move_towards_point(spawnTower.target.x, spawnTower.target.y,15);
 //squirrel_bonus_x = 0; //100;
 //squirrel_bonus_y = 0; //100;
 
 look_ahead_amount = 30;
-
-turret_bullet_speed_hi = 15;
-if (spawnTower.target.direction == 0){
+//squirrel_str = sprite_get_name(0).spawnTower.target;
+turret_bullet_speed_hi = 60;
+/*if (spawnTower.target.direction == 0){
     squirrel_bonus_x = look_ahead_amount;
 }
 if (spawnTower.target.direction == 90){
@@ -45,14 +45,36 @@ if (spawnTower.target.direction == 180){
 }
 if (spawnTower.target.direction == 270){
     squirrel_bonus_y = look_ahead_amount;
+}*/
+/*
+if (squirrel_str == squirrel_run_right){
+    squirrel_bonus_x = look_ahead_amount;
 }
+if (squirrel_str == squirrel_run_away){
+    squirrel_bonus_y = -look_ahead_amount;
+}
+if (squirrel_str == squirrel_run_left){
+    squirrel_bonus_x = -look_ahead_amount;
+}
+if (squirrel_str == squirrel_run_towards){
+    squirrel_bonus_y = look_ahead_amount;
+}
+*/
 
+squirrel_bonus_x = turret_bullet_speed_hi * cos(spawnTower.target.direction); //100;
+squirrel_bonus_y = -turret_bullet_speed_hi * sin(spawnTower.target.direction); //100;
 
-image_angle = point_direction(x, y, spawnTower.target.x, spawnTower.target.y);
+target_point_x = spawnTower.target.x + squirrel_bonus_x;
+target_point_y = spawnTower.target.y + squirrel_bonus_y;
+
+squirrel_bonus_y += ((target_point_y - y) / 30);
+squirrel_bonus_x += ((target_point_x - x) / 30);
+
+image_angle = point_direction(x, y, target_point_x, target_point_y);
 //image_angle = point_direction(x, y, spawnTower.target.x + squirrel_bonus_x, spawnTower.target.y + squirrel_bonus_y);
 // calculate direction vector towards target
-turret_diffX = (spawnTower.target.x + squirrel_bonus_x) - x;
-turret_diffY = (spawnTower.target.y + squirrel_bonus_y) - y;
+turret_diffX = (target_point_x) - x;
+turret_diffY = (target_point_y) - y;
 // normalize direction vector
 turret_magn = sqrt((turret_diffX * turret_diffX) + (turret_diffY * turret_diffY));
 turret_diffX = turret_diffX / turret_magn;

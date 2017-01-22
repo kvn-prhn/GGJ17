@@ -14,6 +14,7 @@
     <sprite>sprites\squirrel_run_right</sprite>
     <sprite>sprites\squirrel_run_left</sprite>
     <sprite>sprites\squirrel_run_away</sprite>
+    <sprite>sprites\squirrel_run_towards</sprite>
     <sprite>sprites\victor_idle</sprite>
     <sprite>sprites\headquarters</sprite>
     <sprite>sprites\towerSprite3</sprite>
@@ -26,7 +27,6 @@
     <sprite>sprites\bullet2</sprite>
     <sprite>sprites\bullet3</sprite>
     <sprite>sprites\bullet4</sprite>
-    <sprite>sprites\squirrel_run_towards</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>

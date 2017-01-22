@@ -399,20 +399,6 @@ global.info_menu = undefined;
       </action>
       <action>
         <libid>1</libid>
-        <id>308</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_timeline_stop</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>424</id>
         <kind>2</kind>
         <userelative>0</userelative>
@@ -458,10 +444,16 @@ draw_text(room_width - 290, room_height - 95, "Squirrels saved:        " + strin
 draw_text(room_width -290, room_height - 40, "Item found:     ");
 
 if(global.current_item == "mirror")
-    draw_sprite(mirrorSprite, 0, room_width - 80, room_height - 40);
+    draw_sprite_stretched(mirrorSprite, 0, room_width - 110, room_height - 70, 64, 64);
     
 if(global.current_item == "gun")
-    draw_sprite(gunSprite, 0, room_width - 80, room_height - 40);
+    draw_sprite_stretched(gunSprite, 0, room_width - 110, room_height - 70, 64, 64);
+    
+if(global.current_item == "bowlingpin")
+    draw_sprite_stretched(bowlingpin, 0, room_width - 110, room_height - 70, 64, 64);
+    
+if(global.current_item == "watergun")
+    draw_sprite_stretched(watergunSpr, 0, room_width - 110, room_height - 70, 64, 64);
 }
 
 </string>

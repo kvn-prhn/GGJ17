@@ -84,7 +84,6 @@
     <font>fonts\turret_info_text</font>
   </fonts>
   <objects name="objects">
-    <object>objects\test_anim</object>
     <object>objects\main_menu_controller1</object>
     <object>objects\controller_1</object>
     <object>objects\controller_3</object>

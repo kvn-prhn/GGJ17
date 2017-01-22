@@ -26,7 +26,6 @@
     <sprite>sprites\towerSprite2</sprite>
     <sprite>sprites\towerSprite2_rekt</sprite>
     <sprite>sprites\towerSprite3</sprite>
-    <sprite>sprites\tower_3_explosion</sprite>
     <sprite>sprites\towerSprite4</sprite>
     <sprite>sprites\trail</sprite>
     <sprite>sprites\squirrel_run_right</sprite>
@@ -49,11 +48,8 @@
     <sprite>sprites\optionsbutton_img</sprite>
     <sprite>sprites\exitbutton_img</sprite>
     <sprite>sprites\continuebutton_img</sprite>
-
-    <sprite>sprites\tower_1_rusted</sprite>
     <sprite>sprites\tower_3_explosion</sprite>
     <sprite>sprites\waterBullet</sprite>
-
     <sprite>sprites\bowlingpin</sprite>
   </sprites>
   <backgrounds name="background">

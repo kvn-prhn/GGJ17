@@ -68,7 +68,6 @@ global.bushes[3] = instance_create(520, 590, bush);
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="victor" x="200" y="130" name="inst_F82B8809" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="end_objective" x="864" y="-31" name="inst_801E2AA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trail_detail" x="84" y="566" name="inst_2CAB3E91" locked="0" code="" scaleX="1.22580647468567" scaleY="6.30999994277954" colour="4294967295" rotation="0"/>
     <instance objName="trail_detail" x="84" y="539" name="inst_577522D1" locked="0" code="" scaleX="11.9700002670288" scaleY="1.34375" colour="4294967295" rotation="0"/>
@@ -82,11 +81,7 @@ global.bushes[3] = instance_create(520, 590, bush);
     <instance objName="turret_1" x="205" y="573" name="inst_E106C88C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_1" x="209" y="220" name="inst_CB3A7A24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="test_anim" x="280" y="122" name="inst_620B63A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_2" x="507" y="78" name="inst_2AF93807" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_2" x="805" y="381" name="inst_88501C6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_1_bullet" x="363" y="359" name="inst_33DDF467" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_4" x="711" y="230" name="inst_14A9E08D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="351" y="729" name="inst_18294B22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

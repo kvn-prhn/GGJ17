@@ -148,7 +148,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>turret_2</object>
+            <object>gun_dropped</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -212,7 +212,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>turret_3_bullet</object>
+            <object>mirror_dropped</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -278,7 +278,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-100</sprite>
+            <sprite>gunSprite</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -352,7 +352,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-100</sprite>
+            <sprite>mirrorSprite</sprite>
           </argument>
           <argument>
             <kind>0</kind>

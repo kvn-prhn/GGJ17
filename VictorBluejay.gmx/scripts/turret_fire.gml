@@ -11,7 +11,10 @@ if(distance_to_object(normal_squirrel) < radius){
     if (coolDown <= 0){
         bullet = instance_create(x,y,bullet_type);
         bullet.tar = target;
-        coolDown = 25;    
+        coolDown = fire_rate;    
+        if (fire_sound_effect != undefined) {
+            audio_play_sound(fire_sound_effect, 8, false);
+        }
     }
 }
 

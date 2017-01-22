@@ -83,7 +83,7 @@ global.bushes[3] = instance_create(520, 590, bush);
     <instance objName="victor" x="208" y="163" name="inst_0775D85C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_1" x="212" y="432" name="inst_B5ED3686" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_2" x="363" y="217" name="inst_BFADA858" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_3" x="525" y="555" name="inst_452121A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_3" x="723" y="63" name="inst_452121A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_4" x="703" y="412" name="inst_BD336645" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

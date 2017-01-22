@@ -50,6 +50,8 @@
     <sprite>sprites\exitbutton_img</sprite>
     <sprite>sprites\continuebutton_img</sprite>
     <sprite>sprites\bowlingpin</sprite>
+    <sprite>sprites\lane</sprite>
+
     <sprite>sprites\tryagainbutton_img</sprite>
     <sprite>sprites\restart_button</sprite>
   </sprites>
@@ -62,6 +64,7 @@
     <background>background\transition_bg</background>
     <background>background\room1_bg</background>
     <background>background\room2_bg</background>
+    <background>background\blue</background>
     <background>background\bg_grass</background>
   </backgrounds>
   <paths name="paths">
@@ -114,6 +117,8 @@
     <object>objects\bowlingpin_dropped</object>
     <object>objects\bulletobj_water</object>
     <object>objects\turret_info_menu</object>
+
+    <object>objects\trailbowlinglane</object>
     <object>objects\tryagainbutton</object>
     <object>objects\restart_button1</object>
   </objects>
@@ -122,8 +127,14 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\main_menu_room</room>
-    <room>rooms\game_room1</room>
+    <room>rooms\game_room4</room>
     <room>rooms\transition_room_1</room>
+
+    <room>rooms\game_room1</room>
+    <room>rooms\game_room2</room>
+    <room>rooms\game_room3</room>
+    <room>rooms\end_room</room>
+
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

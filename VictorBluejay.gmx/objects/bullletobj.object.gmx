@@ -38,6 +38,8 @@ diffY = diffY / magn;
 hspeed = diffX * bullet_speed_hi;
 vspeed = diffY * bullet_speed_hi;
 
+tar = noone;
+
 //hspeed = bullet_speed_hi*cos(image_angle);
 //vspeed = bullet_speed_hi*sin(image_angle);
 //show_message(image_angle);

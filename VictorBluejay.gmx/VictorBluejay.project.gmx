@@ -85,7 +85,6 @@
   </fonts>
   <objects name="objects">
     <object>objects\controller_1</object>
-    <object>objects\controller_1</object>
     <object>objects\controller_4</object>
     <object>objects\end_objective</object>
     <object>objects\victor</object>

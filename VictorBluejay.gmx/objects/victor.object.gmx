@@ -148,7 +148,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>bullletobj</object>
+            <object>turret_2</object>
           </argument>
           <argument>
             <kind>0</kind>

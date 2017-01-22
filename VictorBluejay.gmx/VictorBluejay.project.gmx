@@ -96,11 +96,13 @@
     <objects name="Turrets">
       <object>objects\turret_1</object>
       <object>objects\turret_1_bullet</object>
+      <object>objects\turret_1_destroy</object>
       <object>objects\turret_2</object>
       <object>objects\turret_2_rekt</object>
       <object>objects\turret_2_bullet</object>
       <object>objects\turret_3</object>
       <object>objects\turret_3_bullet</object>
+      <object>objects\turret_3_destroy</object>
       <object>objects\turret_4</object>
       <object>objects\turret_4_bullet</object>
     </objects>

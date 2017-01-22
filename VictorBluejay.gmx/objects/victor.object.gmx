@@ -181,6 +181,30 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
       </action>
       <action>
         <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>boink</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -198,36 +222,14 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
             <string>{
 
     // reverse the bullet direction
-    other.direction = other.direction + 180;
     global.reflected = true;
+    other.direction = other.direction + 180;
+    alarm[0] = 50;
+
 
 }
 
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>-100</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -301,9 +303,11 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// determines what chatch-phrase / one-liner victor says
+            <string>{
+// determines what chatch-phrase / one-liner victor says
 
 //victor_message = "Lol wrekt";
+}
 
 
         
@@ -760,7 +764,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-100</sprite>
+            <sprite>gunSprite</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -834,7 +838,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-100</sprite>
+            <sprite>mirrorSprite</sprite>
           </argument>
           <argument>
             <kind>0</kind>

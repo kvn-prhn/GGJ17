@@ -77,8 +77,11 @@ global.bushes[4] = instance_create(930, 160, bush);
   <instances>
     <instance objName="end_objective" x="813" y="-30" name="inst_A5697732" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_3" x="457" y="507" name="inst_172B5ABA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< HEAD
     <instance objName="turret_1" x="211" y="143" name="inst_700DB931" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="victor" x="170" y="701" name="inst_F6401B93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+=======
+>>>>>>> 5b310e4d7aea1985f2ec598a089cd94a2e3bb1dd
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

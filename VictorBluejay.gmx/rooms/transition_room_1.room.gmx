@@ -12,6 +12,8 @@
   <showcolour>-1</showcolour>
   <code>{
 
+show_message("TRANSITION!");
+
 // drop whatever item Victor has on this stage
 global.current_item = "nothing";
 

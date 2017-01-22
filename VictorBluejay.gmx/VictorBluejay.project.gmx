@@ -61,6 +61,7 @@
     <background>background\transition_bg</background>
     <background>background\room1_bg</background>
     <background>background\room2_bg</background>
+    <background>background\bg_grass</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\main_menu_path</path>
@@ -87,7 +88,6 @@
   </fonts>
   <objects name="objects">
     <object>objects\controller_1</object>
-    <object>objects\controller_4</object>
     <object>objects\end_objective</object>
     <object>objects\victor</object>
     <object>objects\gun_dropped</object>
@@ -121,9 +121,6 @@
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>
-    <timeline>timelines\squirrel_spawner2</timeline>
-    <timeline>timelines\squirrel_spawner3</timeline>
-    <timeline>timelines\squirrel_spawner4</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\main_menu_room</room>

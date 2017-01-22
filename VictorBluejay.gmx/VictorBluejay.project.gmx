@@ -51,7 +51,6 @@
     <sprite>sprites\continuebutton_img</sprite>
     <sprite>sprites\bowlingpin</sprite>
     <sprite>sprites\lane</sprite>
-
     <sprite>sprites\tryagainbutton_img</sprite>
     <sprite>sprites\restart_button</sprite>
   </sprites>
@@ -107,6 +106,9 @@
       <object>objects\turret_3_bullet</object>
       <object>objects\turret_3_destroy</object>
       <object>objects\turret_4_bullet</object>
+      <object>objects\turret_4</object>
+      <object>objects\turret_1_bullet</object>
+      <object>objects\turret_2</object>
     </objects>
     <object>objects\normal_squirrel</object>
     <object>objects\optionsbutton</object>
@@ -116,10 +118,10 @@
     <object>objects\bowlingpin_dropped</object>
     <object>objects\bulletobj_water</object>
     <object>objects\turret_info_menu</object>
-
     <object>objects\trailbowlinglane</object>
     <object>objects\tryagainbutton</object>
     <object>objects\restart_button1</object>
+    <object>objects\playbutton</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>
@@ -128,12 +130,10 @@
     <room>rooms\main_menu_room</room>
     <room>rooms\game_room4</room>
     <room>rooms\transition_room_1</room>
-
     <room>rooms\game_room1</room>
     <room>rooms\game_room2</room>
     <room>rooms\game_room3</room>
     <room>rooms\end_room</room>
-
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

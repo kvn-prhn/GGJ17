@@ -13,6 +13,8 @@
     <sound>sound\boink</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\victor_chat_left</sprite>
+    <sprite>sprites\victor_chat_right</sprite>
     <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\victor_walkingR</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
@@ -24,7 +26,6 @@
     <sprite>sprites\squirrel_run_away</sprite>
     <sprite>sprites\squirrel_run_towards</sprite>
     <sprite>sprites\victor_idle</sprite>
-    <sprite>sprites\headquarters</sprite>
     <sprite>sprites\towerSprite3</sprite>
     <sprite>sprites\mirrorSprite</sprite>
     <sprite>sprites\gunSprite</sprite>
@@ -80,6 +81,7 @@
     <object>objects\turret_2_bullet</object>
     <object>objects\turret_3_bullet</object>
     <object>objects\turret_3</object>
+    <object>objects\bullletobj</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner_main_menu</timeline>

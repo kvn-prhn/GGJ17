@@ -31,23 +31,23 @@ spawnTower = instance_nearest(x,y,turret_1);
 squirrel_bonus_x = 0; //100;
 squirrel_bonus_y = 0; //100;
 
-look_ahead_amount = 30;
+look_a_amount = 30;
 
 turret_bullet_speed_hi = 15;
 
 
 if (spawnTower.target.direction == 0){
 
-    squirrel_bonus_x = look_ahead_amount;
+    squirrel_bonus_x = look_a_amount;
 }
 if (spawnTower.target.direction == 90){
-    squirrel_bonus_y = -look_ahead_amount;
+    squirrel_bonus_y = -look_a_amount;
 }
 if (spawnTower.target.direction == 180){
-    squirrel_bonus_x = -look_ahead_amount;
+    squirrel_bonus_x = -look_a_amount;
 }
 if (spawnTower.target.direction == 270){
-    squirrel_bonus_y = look_ahead_amount;
+    squirrel_bonus_y = look_a_amount;
 }
 
 

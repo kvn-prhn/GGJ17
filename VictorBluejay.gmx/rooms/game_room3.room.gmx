@@ -10,7 +10,34 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>{
+global.controller_for_room = instance_create(0, 0, controller_1);
+    
+// all of the values for this level
+global.current_path = room3_mob_path;  // ppath to follow
+global.controller_for_room.num_squirrels = 5;              // how many will spawn
+global.controller_for_room.num_squirrels_to_pass = 6;       // how many need to survive to pass room
+
+
+
+//keep track of bushes
+global.bushes[0] = instance_create(350, 710, bush);
+global.bushes[1] = instance_create(440, 570, bush);
+
+global.bushes[2] = instance_create(600, 100, bush);
+global.bushes[2].content = "watergun";
+
+global.bushes[3] = instance_create(500, 225, bush);
+
+global.bushes[4] = instance_create(930, 460, bush);
+global.bushes[4].contents = "mirror";
+
+global.bushes[5] = instance_create(230, 460, bush);
+global.bushes[6] = instance_create(130, 260, bush);
+global.bushes[7] = instance_create(30, 660, bush);
+global.bushes[7].contents = "gun";
+
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -31,8 +58,8 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
+    <background visible="-1" foreground="0" name="bg_grass" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="forest_bg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,7 +78,10 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="end_objective" x="992" y="256" name="inst_CB4B6872" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="end_objective" x="992" y="544" name="inst_CB4B6872" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="victor" x="352" y="384" name="inst_DDFAE0B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="224" y="416" name="inst_9D410942" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_3" x="576" y="576" name="inst_4C7DC1AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -6,11 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\rustle</sound>
-
     <sound>sound\music_by_eric</sound>
-  </sounds>
-  <sprites name="sprites">
-
     <sound>sound\gunshot</sound>
     <sound>sound\fire_bow_shoot</sound>
     <sound>sound\gunshot_rapid</sound>
@@ -20,9 +16,7 @@
   <sprites name="sprites">
     <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\victor_walkingR</sprite>
-
-
-
+    <sprite>sprites\victor_idle</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
     <sprite>sprites\towerSprite1</sprite>
     <sprite>sprites\towerSprite2</sprite>
@@ -33,8 +27,6 @@
     <sprite>sprites\squirrel_run_towards</sprite>
     <sprite>sprites\victor_chat_right</sprite>
     <sprite>sprites\victor_chat_left</sprite>
-    <sprite>sprites\victor_idle</sprite>
-    <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\headquarters</sprite>
     <sprite>sprites\towerSprite3</sprite>
     <sprite>sprites\mirrorSprite</sprite>
@@ -69,6 +61,7 @@
   <fonts name="fonts">
     <font>fonts\font1</font>
     <font>fonts\font2</font>
+    <font>fonts\victor_s_font</font>
   </fonts>
   <objects name="objects">
     <object>objects\victor</object>

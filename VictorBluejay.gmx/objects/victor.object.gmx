@@ -58,6 +58,10 @@ global.current_item = "nothing";
 global.victor_speed = 3;
 depth = -y;
 
+if(hspeed &lt; 0)
+sprite_index = victor_walkingL;
+else
+sprite_index = victor_walkingR;
 
 if (keyboard_check(vk_up) || keyboard_check(ord('W'))) {
     vspeed = -global.victor_speed;
@@ -70,8 +74,10 @@ if (keyboard_check(vk_up) || keyboard_check(ord('W'))) {
 
 if (keyboard_check(vk_left) || keyboard_check(ord('A'))) {
     hspeed = -global.victor_speed;
+
 } else if (keyboard_check(vk_right) || keyboard_check(ord('D'))) {
     hspeed = global.victor_speed;
+
 } else {
     hspeed = 0;
 }

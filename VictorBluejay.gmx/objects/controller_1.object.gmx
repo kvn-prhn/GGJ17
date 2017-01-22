@@ -187,7 +187,7 @@ global.info_menu = undefined;
         <arguments>
           <argument>
             <kind>14</kind>
-            <timeline>squirrel_spawner</timeline>
+            <timeline>-100</timeline>
           </argument>
           <argument>
             <kind>0</kind>

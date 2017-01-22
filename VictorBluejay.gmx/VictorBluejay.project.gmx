@@ -60,6 +60,7 @@
     <background>background\transition_bg</background>
     <background>background\room1_bg</background>
     <background>background\room2_bg</background>
+    <background>background\bg_grass</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\main_menu_path</path>
@@ -84,7 +85,6 @@
     <font>fonts\turret_info_text</font>
   </fonts>
   <objects name="objects">
-    <object>objects\controller_1</object>
     <object>objects\controller_1</object>
     <object>objects\controller_4</object>
     <object>objects\end_objective</object>

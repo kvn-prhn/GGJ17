@@ -79,10 +79,9 @@ global.bushes[3].contents = "bowlingpin";
   </views>
   <instances>
     <instance objName="end_objective" x="992" y="0" name="inst_C4DF667E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-
     <instance objName="trail_detail" x="160" y="288" name="inst_366DE549" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="victor" x="640" y="96" name="inst_D0CF2FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_2" x="224" y="672" name="inst_8E11FF44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="224" y="672" name="inst_8E11FF44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_3" x="96" y="288" name="inst_7EE95E00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trailbowlinglane" x="640" y="192" name="inst_272F9ED9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trailbowlinglane" x="512" y="192" name="inst_3EAD3AE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -92,7 +91,7 @@ global.bushes[3].contents = "bowlingpin";
     <instance objName="trailbowlinglane" x="256" y="192" name="inst_4167C84B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trailbowlinglane" x="768" y="192" name="inst_0459246C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trailbowlinglane" x="896" y="192" name="inst_73AD2C62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_4" x="960" y="256" name="inst_34438A00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="960" y="256" name="inst_34438A00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trailbowlinglane" x="0" y="192" name="inst_465EE347" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trailbowlinglane" x="0" y="576" name="inst_177DA4CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trailbowlinglane" x="128" y="576" name="inst_C5CAEED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -109,8 +108,8 @@ global.bushes[3].contents = "bowlingpin";
     <instance objName="trailbowlinglane" x="640" y="384" name="inst_1D4161E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trailbowlinglane" x="768" y="384" name="inst_08642249" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trailbowlinglane" x="896" y="384" name="inst_933A2A93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_4" x="960" y="448" name="inst_EEEE7562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="turret_4" x="960" y="640" name="inst_8537428F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="960" y="448" name="inst_EEEE7562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="960" y="640" name="inst_8537428F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bowlingpin_dropped" x="0" y="192" name="inst_6B3A9810" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bowlingpin_dropped" x="0" y="288" name="inst_F9D7C8A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bowlingpin_dropped" x="0" y="384" name="inst_9F5370DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -133,7 +132,7 @@ global.bushes[3].contents = "bowlingpin";
     <instance objName="mirror_dropped" x="96" y="32" name="inst_ED3AEC5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="gun_dropped" x="32" y="32" name="inst_A50EC730" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="watergun_dropped" x="160" y="32" name="inst_1B1118BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> 5f204b5fbd5d3052472a08c1b77be51d35254d3a
+    <instance objName="&lt;undefined&gt;" x="0" y="0" name="" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -169,7 +169,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>tower2health</string>
+            <string>t_health</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -275,7 +275,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>tower2health</string>
+            <string>t_health</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -375,13 +375,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*{
-tower2health -= 1;
+            <string>{
+t_health-= 1;
 
-if(tower2health == 0){
+if(t_health== 0){
     instance_destroy();
 }
-}*/
+
+}
 </string>
           </argument>
         </arguments>
@@ -402,7 +403,7 @@ if(tower2health == 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>tower2health</string>
+            <string>t_health</string>
           </argument>
           <argument>
             <kind>0</kind>

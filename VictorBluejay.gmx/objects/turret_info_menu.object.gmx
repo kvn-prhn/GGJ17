@@ -3,7 +3,7 @@
   <spriteName>victor_chat_right</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-30</depth>
+  <depth>-80</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -272,20 +272,8 @@
             <string>{
 // display text about turret_info
 
-display_hp = -1;
-if (turret_info.tower1health != undefined) {
-    diplay_hp = turret_info.tower1health;
-}  else if (turret_info.tower2health != undefined) {
-    diplay_hp = turret_info.tower2health;
-} else if (turret_info.tower3health != undefined) {
-    diplay_hp = turret_info.tower3health;
-} else if (turret_info.tower4health != undefined) {
-    diplay_hp = turret_info.tower4health;
-}  
-  
-
 // dipsplay health
-draw_text(x + 5, y + 10, "Health: " + string(display_hp));
+draw_text(x + 5, y + 10, "Health: " + string(turret_info.t_health));
 
 // display fire rate
 draw_text(x + 5, y + 30, "Fire rate: " + string(turret_info.fire_rate));

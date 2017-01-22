@@ -6,6 +6,10 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\rustle</sound>
+    <sound>sound\gunshot</sound>
+    <sound>sound\fire_bow_shoot</sound>
+    <sound>sound\gunshot_rapid</sound>
+    <sound>sound\laser_shoot</sound>
     <sound>sound\boink</sound>
   </sounds>
   <sprites name="sprites">

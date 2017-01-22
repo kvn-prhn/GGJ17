@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\rustle</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
@@ -31,25 +33,42 @@
   <backgrounds name="background">
     <background>background\grass_bg</background>
     <background>background\parking_lot_bg</background>
+    <background>background\forest_bg</background>
+    <background>background\city_bg</background>
   </backgrounds>
   <paths name="paths">
-    <path>paths\room1_mob_path</path>
     <path>paths\main_menu_path</path>
+    <path>paths\room1_mob_path</path>
+    <path>paths\room2_mob_path</path>
+    <path>paths\room3_mob_path</path>
+    <path>paths\room4_mob_path</path>
   </paths>
+  <scripts name="scripts">
+    <script>scripts\goto_the_next_room.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
     <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
-    <object>objects\bullletobj</object>
-    <object>objects\controller_1</object>
-    <object>objects\end_objective</object>
-    <object>objects\normal_squirrel</object>
+    <object>objects\object0</object>
     <object>objects\test_anim</object>
+
+    <object>objects\main_menu_controller1</object>
+    <object>objects\controller_1</object>
+    <object>objects\controller_2</object>
+    <object>objects\controller_3</object>
+    <object>objects\controller_4</object>
+    <object>objects\end_objective</object>
+    <object>objects\gun_dropped</object>
+    <object>objects\mirror_dropped</object>
+    <object>objects\bush</object>
+
     <object>objects\trail_detail</object>
     <object>objects\victor</object>
     <object>objects\bush</object>
     <object>objects\main_menu_controller1</object>
+
     <object>objects\turret_1</object>
     <object>objects\turret_1_bullet</object>
     <object>objects\turret_2</object>
@@ -58,16 +77,23 @@
     <object>objects\turret_3_bullet</object>
     <object>objects\turret_4</object>
     <object>objects\turret_4_bullet</object>
-    <object>objects\gun_dropped</object>
-    <object>objects\mirror_dropped</object>
+    <object>objects\victor</object>
+    <object>objects\bullletobj</object>
+    <object>objects\normal_squirrel</object>
   </objects>
   <timelines name="timelines">
-    <timeline>timelines\squirrel_spawner</timeline>
     <timeline>timelines\squirrel_spawner_main_menu</timeline>
+    <timeline>timelines\squirrel_spawner</timeline>
+    <timeline>timelines\squirrel_spawner2</timeline>
+    <timeline>timelines\squirrel_spawner3</timeline>
+    <timeline>timelines\squirrel_spawner4</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\main_menu_room</room>
     <room>rooms\game_room1</room>
+    <room>rooms\game_room2</room>
+    <room>rooms\game_room3</room>
+    <room>rooms\game_room4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

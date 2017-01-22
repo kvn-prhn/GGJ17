@@ -30,6 +30,9 @@ image_speed = 0.4;
 
 // the item that victor is "holding:
 global.current_item = "nothing";
+
+v_health = 10;
+
 }
 </string>
           </argument>
@@ -148,7 +151,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>gun_dropped</object>
+            <object>bullletobj</object>
           </argument>
           <argument>
             <kind>0</kind>

@@ -46,6 +46,8 @@
   <scripts name="scripts">
     <script>scripts\goto_the_next_room.gml</script>
     <script>scripts\bullet_script.gml</script>
+    <script>scripts\turret_fire.gml</script>
+    <script>scripts\neg_y.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
@@ -71,6 +73,8 @@
     <object>objects\normal_squirrel</object>
     <object>objects\turret_2_bullet</object>
     <object>objects\turret_3_bullet</object>
+    <object>objects\turret_3</object>
+    <object>objects\bullletobj</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner_main_menu</timeline>

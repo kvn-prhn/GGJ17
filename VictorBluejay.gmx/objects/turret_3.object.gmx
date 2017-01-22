@@ -145,7 +145,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>tower3health</string>
+            <string>t_health</string>
           </argument>
           <argument>
             <kind>0</kind>

@@ -169,11 +169,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>tower2health</string>
+            <string>t_health</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+
+            <string>10</string>
+
           </argument>
         </arguments>
       </action>
@@ -275,7 +277,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>tower2health</string>
+            <string>t_health</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -376,13 +378,38 @@
           <argument>
             <kind>1</kind>
             <string>{
-tower2health -= 1;
+t_health-= 1;
 
-if(tower2health == 0){
+if(t_health== 0){
     instance_destroy();
 }
+
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>t_health</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
           </argument>
         </arguments>
       </action>

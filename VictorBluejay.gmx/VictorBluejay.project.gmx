@@ -13,6 +13,7 @@
     <sound>sound\laser_shoot</sound>
     <sound>sound\boink</sound>
     <sound>sound\button_press1</sound>
+    <sound>sound\water_splat</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\watergunSpr</sprite>
@@ -48,7 +49,9 @@
     <sprite>sprites\tower_1_rusted</sprite>
     <sprite>sprites\tower_3_explosion</sprite>
     <sprite>sprites\waterBullet</sprite>
-    <sprite>sprites\sprite32</sprite>
+
+    <sprite>sprites\bowlingpin</sprite>
+
   </sprites>
   <backgrounds name="background">
     <background>background\grass_bg</background>
@@ -108,6 +111,7 @@
     <object>objects\continuebutton</object>
     <object>objects\watergun_dropped</object>
     <object>objects\bowlingpin_dropped</object>
+    <object>objects\bulletobj_water</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner_main_menu</timeline>

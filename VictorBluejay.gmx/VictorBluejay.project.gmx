@@ -6,9 +6,9 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\rustle</sound>
+    <sound>sound\music_by_eric</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\end_objective_sprite</sprite>
     <sprite>sprites\towerSprite1</sprite>
     <sprite>sprites\towerSprite2</sprite>
@@ -17,7 +17,10 @@
     <sprite>sprites\squirrel_run_left</sprite>
     <sprite>sprites\squirrel_run_away</sprite>
     <sprite>sprites\squirrel_run_towards</sprite>
+    <sprite>sprites\victor_chat_right</sprite>
+    <sprite>sprites\victor_chat_left</sprite>
     <sprite>sprites\victor_idle</sprite>
+    <sprite>sprites\victor_walkingL</sprite>
     <sprite>sprites\headquarters</sprite>
     <sprite>sprites\towerSprite3</sprite>
     <sprite>sprites\mirrorSprite</sprite>

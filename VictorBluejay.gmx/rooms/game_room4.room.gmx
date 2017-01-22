@@ -133,6 +133,11 @@ global.bushes[3].contents = "bowlingpin";
     <instance objName="gun_dropped" x="32" y="32" name="inst_A50EC730" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="watergun_dropped" x="160" y="32" name="inst_1B1118BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="0" y="0" name="" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+
+    <instance objName="turret_4" x="960" y="256" name="inst_C0B89450" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_4" x="960" y="448" name="inst_EE4AA87F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="turret_4" x="960" y="640" name="inst_F69D5C65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

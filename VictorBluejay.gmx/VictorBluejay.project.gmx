@@ -106,6 +106,9 @@
       <object>objects\turret_3_bullet</object>
       <object>objects\turret_3_destroy</object>
       <object>objects\turret_4_bullet</object>
+      <object>objects\turret_4</object>
+      <object>objects\turret_1_bullet</object>
+      <object>objects\turret_2</object>
     </objects>
     <object>objects\normal_squirrel</object>
     <object>objects\optionsbutton</object>
@@ -118,6 +121,7 @@
     <object>objects\trailbowlinglane</object>
     <object>objects\tryagainbutton</object>
     <object>objects\restart_button1</object>
+    <object>objects\playbutton</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\squirrel_spawner</timeline>

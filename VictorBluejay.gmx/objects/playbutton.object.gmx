@@ -100,7 +100,7 @@ if (room_exists(room_next(room))) room_goto_next();
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>button_press1</sound>
+            <sound>-100</sound>
           </argument>
           <argument>
             <kind>3</kind>

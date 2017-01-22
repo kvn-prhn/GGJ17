@@ -467,7 +467,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
           </argument>
           <argument>
             <kind>4</kind>
-            <string>0</string>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -491,11 +491,11 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-56</string>
+            <string>-52</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-42</string>
+            <string>-56</string>
           </argument>
         </arguments>
       </action>
@@ -607,7 +607,7 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
           </argument>
           <argument>
             <kind>4</kind>
-            <string>0</string>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -631,11 +631,11 @@ if (global.current_item == "gun" &amp;&amp; v_gun_cooldown &lt;= 0){            
           </argument>
           <argument>
             <kind>0</kind>
-            <string>18</string>
+            <string>52</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-42</string>
+            <string>-56</string>
           </argument>
         </arguments>
       </action>

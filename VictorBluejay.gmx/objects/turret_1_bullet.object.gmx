@@ -34,7 +34,7 @@ move_towards_point(spawnTower.target.x, spawnTower.target.y,15)
 look_ahead_amount = 30;
 
 turret_bullet_speed_hi = 15;
-if (spawnTower.target.direction == 0){
+/*if (spawnTower.target.direction == 0){
     squirrel_bonus_x = look_ahead_amount;
 }
 if (spawnTower.target.direction == 90){
@@ -60,7 +60,7 @@ turret_diffY = turret_diffY / turret_magn;
 // set speed
 hspeed = turret_diffX * turret_bullet_speed_hi;
 vspeed = turret_diffY * turret_bullet_speed_hi;
-
+*/
 //hspeed = bullet_speed_hi*cos(image_angle);
 //vspeed = bullet_speed_hi*sin(image_angle);
 //show_message(image_angle);

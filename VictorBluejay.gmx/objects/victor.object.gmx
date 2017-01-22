@@ -214,7 +214,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>gunSprite</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -288,7 +288,7 @@ if (hspeed == 0 &amp;&amp; vspeed == 0) {
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>mirrorSprite</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -370,6 +370,8 @@ if (global.current_item == "nothing") {
             if (nearest_bush.contents != "nothing") {
                 global.current_item = nearest_bush.contents;
                 nearest_bush.contents = "nothing";
+                // play a leaf rustle sound
+                audio_play_sound(rustle, 10, false);
                 interacted = true;
             }
         }
